@@ -1,0 +1,198 @@
+{
+  "__generated__": "⚠️ This file is generated. Do not edit.",
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "duotone": [],
+      "palette": [
+        {
+          "name": "Transparent",
+          "slug": "transparent",
+          "color": "transparent"
+        },
+        {
+          "name": "Current",
+          "slug": "current",
+          "color": "currentcolor"
+        },
+        {
+          "name": "Dark-gray",
+          "slug": "dark-gray",
+          "color": "#424041"
+        },
+        {
+          "name": "Medium-gray",
+          "slug": "medium-gray",
+          "color": "#928d8e"
+        },
+        {
+          "name": "Light-gray",
+          "slug": "light-gray",
+          "color": "#dedddd"
+        },
+        {
+          "name": "Dust",
+          "slug": "dust",
+          "color": "#b8b2b2"
+        },
+        {
+          "name": "Warm-gray",
+          "slug": "warm-gray",
+          "color": "#cac6c6"
+        },
+        {
+          "name": "Charcoal",
+          "slug": "charcoal",
+          "color": "#191919"
+        },
+        {
+          "name": "Off-white",
+          "slug": "off-white",
+          "color": "#ffffff"
+        }
+      ]
+    },
+    "custom": {
+      "spacing": {},
+      "typography": {
+        "font-size": {},
+        "line-height": {}
+      }
+    },
+    "spacing": {
+      "padding": true,
+      "units": [
+        "px",
+        "%",
+        "em",
+        "rem",
+        "vw",
+        "vh"
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "fontFamilies": [
+        {
+          "name": "SequelSans",
+          "slug": "sans",
+          "fontFamily": "SequelSans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\""
+        },
+        {
+          "name": "SuisseWorks",
+          "slug": "serif",
+          "fontFamily": "SuisseWorks,ui-serif,Georgia,Cambria,\"Times New Roman\",Times,serif"
+        }
+      ],
+      "fontSizes": [
+        {
+          "name": "5xs",
+          "slug": "5xs",
+          "size": "0.5rem"
+        },
+        {
+          "name": "4xs",
+          "slug": "4xs",
+          "size": "0.625rem"
+        },
+        {
+          "name": "3xs",
+          "slug": "3xs",
+          "size": "0.75rem"
+        },
+        {
+          "name": "2xs",
+          "slug": "2xs",
+          "size": "0.875rem"
+        },
+        {
+          "name": "xs",
+          "slug": "xs",
+          "size": "0.9375rem"
+        },
+        {
+          "name": "sm",
+          "slug": "sm",
+          "size": "1rem"
+        },
+        {
+          "name": "base",
+          "slug": "base",
+          "size": "1.0625rem"
+        },
+        {
+          "name": "lg",
+          "slug": "lg",
+          "size": "1.125rem"
+        },
+        {
+          "name": "xl",
+          "slug": "xl",
+          "size": "1.25rem"
+        },
+        {
+          "name": "2xl",
+          "slug": "2xl",
+          "size": "1.375rem"
+        },
+        {
+          "name": "3xl",
+          "slug": "3xl",
+          "size": "1.5rem"
+        },
+        {
+          "name": "4xl",
+          "slug": "4xl",
+          "size": "1.75rem"
+        },
+        {
+          "name": "5xl",
+          "slug": "5xl",
+          "size": "1.875rem"
+        },
+        {
+          "name": "6xl",
+          "slug": "6xl",
+          "size": "2rem"
+        },
+        {
+          "name": "7xl",
+          "slug": "7xl",
+          "size": "2.25rem"
+        },
+        {
+          "name": "8xl",
+          "slug": "8xl",
+          "size": "2.375rem"
+        },
+        {
+          "name": "9xl",
+          "slug": "9xl",
+          "size": "2.75rem"
+        },
+        {
+          "name": "10xl",
+          "slug": "10xl",
+          "size": "3rem"
+        },
+        {
+          "name": "11xl",
+          "slug": "11xl",
+          "size": "3.625rem"
+        },
+        {
+          "name": "12xl",
+          "slug": "12xl",
+          "size": "4.375rem"
+        }
+      ]
+    }
+  }
+}
