@@ -42,6 +42,7 @@
     "roots/wp-password-bcrypt": "1.1.0",
     "wpackagist-theme/twentytwentythree": "^1.0",
     "roots/acorn": "^2.1",
+    "roots/soil": "^4.1",
     "log1x/modern-login": "^1.0",
     "wpackagist-plugin/duplicate-post": "^4.5",
     "wpackagist-plugin/enable-media-replace": "^4.1",

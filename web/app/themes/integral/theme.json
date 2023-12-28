@@ -56,6 +56,11 @@
           "name": "Off-white",
           "slug": "off-white",
           "color": "#ffffff"
+        },
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "#ffffff"
         }
       ]
     },

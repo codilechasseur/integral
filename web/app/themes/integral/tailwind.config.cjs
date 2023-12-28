@@ -14,6 +14,7 @@ module.exports = {
       'warm-gray': '#CAC6C6',
       'charcoal': '#191919',
       'off-white': '#FFFFFF',
+      'white': '#FFFFFF',
     },
     fontSize: {
       '5xs': '0.5rem', // 8px

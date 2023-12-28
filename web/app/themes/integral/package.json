@@ -23,5 +23,9 @@
     "@roots/bud-tailwindcss": "6.7.3",
     "@roots/sage": "6.7.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@hotwired/turbo": "^8.0.0-beta.2",
+    "alpine-turbo-drive-adapter": "^2.1.0",
+    "alpinejs": "^3.13.3"
+  }
 }
