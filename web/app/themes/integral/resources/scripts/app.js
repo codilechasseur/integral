@@ -1,6 +1,6 @@
 import domReady from '@roots/sage/client/dom-ready';
 import 'alpine-turbo-drive-adapter'
-import 'alpinejs';
+import Alpine from 'alpinejs';
 import * as Turbo from "@hotwired/turbo";
 
 /**
@@ -8,6 +8,8 @@ import * as Turbo from "@hotwired/turbo";
  */
 domReady(async () => {
   // ...
+  window.Alpine = Alpine
+  Alpine.start()
 });
 
 /**

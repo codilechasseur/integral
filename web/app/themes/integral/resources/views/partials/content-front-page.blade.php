@@ -20,11 +20,53 @@
 </div>
 
 
-<div class="bg-dust">
+<div class="bg-dust flex flex-row">
+  <div class="bg-dark-gray w-2/5">
+  </div>
 
-  @svg('images/icon-arrows')
-  @svg('images/icon-arrow')
-  @svg('images/icon-reticle')
+  <div class="flex flex-row" x-data="{selected:1}">
+    <div class="flex">
+      <div class="relative overflow-hidden transition-all max-w-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 1 ? 'max-width: ' + $refs.container1.scrollWidth + 'px' : ''">
+        Content
+      </div>
+
+      <button
+        type="button"
+        class="w-full px-8 py-6 text-left"
+        @click="selected !== 1 ? selected = 1 : selected = null"
+      >
+        @svg('images/icon-arrows')
+      </button>
+    </div>
+
+    <div class="flex">
+      <div class="relative overflow-hidden transition-all max-w-0 duration-700" style="" x-ref="container2" x-bind:style="selected == 2 ? 'max-width: ' + $refs.container2.scrollWidth + 'px' : ''">
+        Content 2
+      </div>
+
+      <button
+        type="button"
+        class="w-full px-8 py-6 text-left"
+        @click="selected !== 2 ? selected = 2 : selected = null"
+      >
+        @svg('images/icon-arrow')
+      </button>
+    </div>
+
+    <div class="flex">
+      <div class="relative overflow-hidden transition-all max-w-0 duration-700" style="" x-ref="container3" x-bind:style="selected == 3 ? 'max-width: ' + $refs.container3.scrollWidth + 'px' : ''">
+        Content 3
+      </div>
+
+      <button
+        type="button"
+        class="w-full px-8 py-6 text-left"
+        @click="selected !== 3 ? selected = 3 : selected = null"
+      >
+        @svg('images/icon-reticle')
+      </button>
+    </div>
+  </div>
 </div>
 
 <a href="#" class="button draw meet">Button</a>
