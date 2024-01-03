@@ -66,3 +66,28 @@
     linear-gradient(to top, yellow 2px, transparent 2px) 0 100%;
   transition: none;
 }
+
+
+
+
+
+
+
+
+.pane.active {
+  flex-grow: 10;
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .pane.active .label {
+    transform: translateX(0.5rem);
+  }
+}
+.pane.active .content {
+  max-width: none;
+}
+.pane.active .content > * {
+  opacity: 1;
+  transform: translateX(0);
+}

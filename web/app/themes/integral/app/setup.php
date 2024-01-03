@@ -14,7 +14,7 @@ use function Roots\bundle;
  * @return void
  */
 add_action('wp_enqueue_scripts', function () {
-    bundle('app')->enqueueCss()->enqueueJs(false);
+    bundle('app')->enqueue();
 }, 100);
 
 /**

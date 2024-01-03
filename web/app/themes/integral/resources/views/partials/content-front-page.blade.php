@@ -19,54 +19,70 @@
   </div>
 </div>
 
-
 <div class="bg-dust flex flex-row">
-  <div class="bg-dark-gray w-2/5">
+  <div class="bg-dark-gray w-2/5 px-16">
+    <h3 class="font-serif text-medium-gray text-12xl leading-4 tracking-wider">Unlocking <em class="block text-white">the Potential</em> in Real Estate</h3>
+    <p class="text-white text-3xl leading-10 tracking-tight font-light">Managing real estate investments today has never been more complex and the risks have never been higher. Our proven strategic approach, rooted in financial due diligence and creative problem solving delivers long-term results for our clients.</p>
+    <a href="#" class="button">Learn more about services</a>
   </div>
 
-  <div class="flex flex-row" x-data="{selected:1}">
-    <div class="flex">
-      <div class="relative overflow-hidden transition-all max-w-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 1 ? 'max-width: ' + $refs.container1.scrollWidth + 'px' : ''">
-        Content
+  <div class="antialiased w-full bg-gradient-to-b flex flex-col font-sans from-black items-stretch justify-center h-screen to-gray-900 sm:flex-row sm:items-center">
+    <div class="flex flex-col flex-grow items-stretch min-w-md w-full h-full sm:flex-row sm:overflow-hidden">
+
+      <div class="active bg-dark-gray cursor-pointer duration-700 ease-in-out flex-grow min-h-14 min-w-14 overflow-hidden pane relative transition-all">
+        <div class="content flex flex-col justify-center leading-tight text-white whitespace-pre max-w-0">
+          <div class="ease-in-out font-bold duration-700 opacity-0 relative transform transition-all">Imagine</div>
+          <div class="delay-100 duration-700 ease-in-out opacity-0 relative transform transition-all">Three decades in the business allows me to provide an unfiltered perspective. </div>
+        </div>
+        <div class="absolute bottom-0 duration-700 ease-in-out flex label right-0 mb-2 ml-3 sm:mb-3 sm:ml-2 transition-all z-30">
+          <div class="bg-gray-900 flex items-center justify-center mr-3 rounded-full text-red-500">@svg('images/icon-arrows')</div>
+        </div>
       </div>
 
-      <button
-        type="button"
-        class="w-full px-8 py-6 text-left"
-        @click="selected !== 1 ? selected = 1 : selected = null"
-      >
-        @svg('images/icon-arrows')
-      </button>
-    </div>
-
-    <div class="flex">
-      <div class="relative overflow-hidden transition-all max-w-0 duration-700" style="" x-ref="container2" x-bind:style="selected == 2 ? 'max-width: ' + $refs.container2.scrollWidth + 'px' : ''">
-        Content 2
+      <div class="bg-medium-gray cursor-pointer duration-700 ease-in-out flex-grow min-h-14 min-w-14 overflow-hidden pane relative transition-all">
+        <div class="content flex flex-col justify-center leading-tight text-white whitespace-pre max-w-0">
+          <div class="ease-in-out font-bold duration-700 opacity-0 relative transform transition-all">Build</div>
+          <div class="delay-100 duration-700 ease-in-out opacity-0 relative transform transition-all">Realize your vision</div>
+        </div>
+        <div class="absolute bottom-0 duration-700 ease-in-out flex label right-0 mb-2 ml-3 sm:mb-3 sm:ml-2 transition-all z-30">
+          <div class="bg-gray-900 flex items-center justify-center mr-3 rounded-full text-yellow-500">@svg('images/icon-arrow')</div>
+        </div>
       </div>
 
-      <button
-        type="button"
-        class="w-full px-8 py-6 text-left"
-        @click="selected !== 2 ? selected = 2 : selected = null"
-      >
-        @svg('images/icon-arrow')
-      </button>
-    </div>
-
-    <div class="flex">
-      <div class="relative overflow-hidden transition-all max-w-0 duration-700" style="" x-ref="container3" x-bind:style="selected == 3 ? 'max-width: ' + $refs.container3.scrollWidth + 'px' : ''">
-        Content 3
+      <div class="bg-light-gray cursor-pointer duration-700 ease-in-out flex-grow min-h-14 min-w-14 overflow-hidden pane relative transition-all">
+        <div class="content flex flex-col justify-center leading-tight text-white whitespace-pre max-w-0">
+          <div class="ease-in-out font-bold duration-700 opacity-0 relative transform transition-all">Explore</div>
+          <div class="delay-100 duration-700 ease-in-out opacity-0 relative transform transition-all">Discover the world</div>
+        </div>
+        <div class="absolute bottom-0 duration-700 ease-in-out flex label right-0 mb-2 ml-3 sm:mb-3 sm:ml-2 transition-all z-30">
+          <div class="bg-gray-900 flex items-center justify-center mr-3 rounded-full text-green-500">@svg('images/icon-reticle')</div>
+        </div>
       </div>
 
-      <button
-        type="button"
-        class="w-full px-8 py-6 text-left"
-        @click="selected !== 3 ? selected = 3 : selected = null"
-      >
-        @svg('images/icon-reticle')
-      </button>
     </div>
   </div>
 </div>
 
-<a href="#" class="button draw meet">Button</a>
+<div class="flex bg-light-gray p-[11.36vw] gap-x-[14.6590vw]">
+  <div class="flex flex-col justify-end w-1/2">
+    <h3 class="font-serif text-10xl leading-6 tracking-tight mb-6">Our <em>strategic approach</em> reflects our insight-driven perspective.</h3>
+    <p>Our tactical, phased approach to analyzing and identifying opportunities and mitigating risk in real estate provides our clients with confidence and peace of mind in an often-fluctuating market. With our thorough and thoughtful process and our inherent ability to identify and challenge assumptions, we build lasting value for our clients.</p>
+    <a href="" class="button mt-12">Learn more</a>
+  </div>
+
+  <div class="w-1/2">
+    <img src="https://picsum.photos/800" class="rounded-full" />
+  </div>
+</div>
+
+<div class="flex flex-row-reverse bg-light-gray p-[11.36vw] gap-x-[14.6590vw]">
+  <div class="flex flex-col justify-end w-1/2">
+    <h3 class="font-serif text-10xl leading-6 tracking-tight mb-6">The <em>values we share</em> with our clients create long-term partnerships.</h3>
+    <p>A statement about how shared values drive great collaborations. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <a href="" class="button mt-12">Learn more</a>
+  </div>
+
+  <div class="w-1/2">
+    <img src="https://picsum.photos/400/600/" />
+  </div>
+</div>
