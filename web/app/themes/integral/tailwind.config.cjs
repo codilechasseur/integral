@@ -15,6 +15,7 @@ module.exports = {
       'charcoal': '#191919',
       'off-white': '#FFFFFF',
       'white': '#FFFFFF',
+      'red': '#FF0000',
     },
     fontSize: {
       '5xs': '0.5rem', // 8px
@@ -58,8 +59,15 @@ module.exports = {
       'wide': '0.02rem',
       'wider': '0.03rem',
     },
+    deliciousHamburgers: {
+      size: '40px', // must be in px.
+      color: '#FFFFFF',
+      colorLight: '#fff8f4',
+      padding: '0px', // must be in px.
+      animationSpeed: 1,
+    },
     extend: {
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-delicious-hamburgers')],
 };

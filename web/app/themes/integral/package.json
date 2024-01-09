@@ -24,8 +24,11 @@
     "@roots/sage": "6.7.3"
   },
   "dependencies": {
+    "@alpinejs/intersect": "^3.13.3",
     "@hotwired/turbo": "^8.0.0-beta.2",
+    "@kevinbatdorf/alpine-auto-init": "KevinBatdorf/alpine-auto-init",
     "alpine-turbo-drive-adapter": "^2.1.0",
-    "alpinejs": "^3.13.3"
+    "alpinejs": "^3.13.3",
+    "tailwindcss-delicious-hamburgers": "^1.0.3"
   }
 }
