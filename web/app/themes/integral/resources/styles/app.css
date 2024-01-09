@@ -73,10 +73,16 @@
 
 
 
+.pane .icon >div {
+  /* @apply px-3; */
+  /* right: 50%;
+  transform: translateX(50%); */
+}
 
 .pane.active {
   flex-grow: 10;
   max-width: 100%;
+  /* @apply px-0; */
 }
 
 @media (min-width: 640px) {
