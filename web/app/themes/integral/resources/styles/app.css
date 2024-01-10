@@ -73,35 +73,51 @@
 
 
 
-.pane .icon >div {
-  /* @apply px-3; */
-  /* right: 50%;
-  transform: translateX(50%); */
+
+
+
+
+
+
+
+
+
+
+
+.panes {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+}
+
+.pane {
+  flex: 1;
+  height: 100%;
+  transition: flex 0.8s ease;
+  position: relative;
+  min-width: 120px;
+}
+
+.pane .content {
+  transition: all 0.8s ease;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  padding: 57px;
+  /* visibility: hidden; */
 }
 
 .pane.active {
-  flex-grow: 10;
-  max-width: 100%;
-  /* @apply px-0; */
-}
-
-@media (min-width: 640px) {
-  .pane.active .label {
-    transform: translateX(0.5rem);
-  }
+  flex: 7;
 }
 
 .pane.active .content {
-  max-width: none;
-}
-
-.pane.active .content > * {
+  width: calc(100% - 120px);
+  height: 100%;
   opacity: 1;
-  transform: translateX(0);
+  /* visibility: visible; */
 }
-
-
-
 
 
 

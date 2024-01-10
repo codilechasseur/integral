@@ -18,7 +18,7 @@ domReady(async () => {
   let activePaneIndex = 0;
 
   panes.forEach((pane, index) => {
-    pane.addEventListener('click', () => {
+    pane.addEventListener('mouseover', () => {
       panes[activePaneIndex].classList.remove('active');
       activePaneIndex = index;
       panes[activePaneIndex].classList.add('active');
@@ -33,23 +33,23 @@ domReady(async () => {
   });
 
 
-  const progressbar = document.querySelector('progress')
-  const article = document.querySelector('section')
+  // const progressbar = document.querySelector('progress')
+  // const article = document.querySelector('section')
 
-  console.log(article);
+  // console.log(article);
 
-  let isScrolling = false
+  // let isScrolling = false
 
-  document.addEventListener('scroll', (e) => isScrolling = true)
+  // document.addEventListener('scroll', (e) => isScrolling = true)
 
-  render()
+  // render()
 
-  function render() {
-    requestAnimationFrame(render)
-    if (!isScrolling) return
-    progressbar.value = window.scrollY / (article.offsetHeight - window.innerHeight) * 100
-    isScrolling = false
-  }
+  // function render() {
+  //   requestAnimationFrame(render)
+  //   if (!isScrolling) return
+  //   progressbar.value = window.scrollY / (article.offsetHeight - window.innerHeight) * 100
+  //   isScrolling = false
+  // }
 
 });
 
