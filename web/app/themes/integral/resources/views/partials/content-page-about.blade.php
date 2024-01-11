@@ -74,7 +74,8 @@
 	<div :style="`max-height:${height}%`" class="h-full bg-indigo-500"></div>
 </div> --}}
 
-<progress min="0" max="100" value="0"></progress>
+
+
 
 <section class="bg-light-gray px-4 md:px-8 lg:px-16 py-24 grid grid-cols-2 lg:grid-cols-4 gap-x-24">
   <div>
@@ -108,12 +109,13 @@
   </div>
 </section>
 
+
 <div class="flex flex-col-reverse lg:flex-row bg-light-gray p-4 md:p-8 lg:p-[11.36vw] gap-x-[14.6590vw]">
   <div class="flex flex-col justify-end lg:w-1/2">
     <h3>Leadership</h3>
     <h4 class="font-serif text-10xl leading-6 tracking-tight mb-6">Andrew Tong</h4>
     <p>In the early 1990s, when Andrew began his career in real estate, the industry was significantly different than today. As his responsibilities grew over these 30 years, so did his perspective on the power of insightful real estate investments. Through his leadership and C-suite roles, Andrew has a built a consistent track record of delivering and creating value for stakeholders. His deep and extensive experience, most recently managing a real estate fund, has honed a rare set of skills and long-held relationships in the industry. Now with his own practice, Andrew brings his well-earned reputation for pragmatism, directness and results to Integral Real Estate Advisory.</p>
-    <a href="" class="button mt-12">Linkedin</a>
+    <a href="" class="button dark mt-12"><span><span>Linkedin</span></span></a>
   </div>
 
   <div class="lg:w-1/2">
