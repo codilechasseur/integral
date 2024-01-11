@@ -65,7 +65,7 @@
 .button span {
   display: block;
   position: relative;
-  line-height: 50px;
+  line-height: 52px;
   height: 50px;
   cursor: pointer;
 }
@@ -114,6 +114,10 @@
   width: calc(100% - 1px);
   height: calc(100% - 1px);
   transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+
+.button > span > span {
+  padding: 0 20px;
 }
 
 .button>span>span:after {
@@ -170,6 +174,53 @@
   max-width: 518px;
   letter-spacing: 0.72px;
 }
+
+
+
+.progress-wrapper,
+.progress-wrapper > div:not(.progress-indicator) {
+  position: relative;
+}
+
+.progress-indicator {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 100%;
+  max-height: 0;
+  background-color: #424041;
+  z-index: 10;
+}
+
+.progress-wrapper > div:not(.progress-indicator):before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #928D8E;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-wrapper > div:not(.progress-indicator):after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #928D8E;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+
+
+
+
 
 /**
 ** Gravity Forms

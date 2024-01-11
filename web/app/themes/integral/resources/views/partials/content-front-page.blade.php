@@ -64,26 +64,29 @@
   </div>
 </div>
 
-<div x-data="{ shown: false }" x-intersect.half="shown = true" class="flex flex-col-reverse lg:flex-row bg-light-gray px-12 py-9 md:p-[11.36vw] gap-x-[14.6590vw]">
-  <div class="flex flex-col justify-end lg:w-1/2">
-    <h3 x-show="shown" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">Our <em>strategic approach</em> reflects our insight-driven perspective.</h3>
-    <p x-show="shown" x-transition.opacity.duration.2000ms>Our tactical, phased approach to analyzing and identifying opportunities and mitigating risk in real estate provides our clients with confidence and peace of mind in an often-fluctuating market. With our thorough and thoughtful process and our inherent ability to identify and challenge assumptions, we build lasting value for our clients.</p>
-    <a href="" class="button dark mt-12"><span><span>Learn more</span></span></a>
+<section class="progress-wrapper">
+  <div class="progress-indicator"></div>
+  <div x-data="{ shown: false }" x-intersect.half="shown = true" class="flex flex-col-reverse lg:flex-row bg-light-gray px-12 py-9 md:p-16 gap-x-[14.6590vw]">
+    <div class="flex flex-col justify-end lg:w-1/2">
+      <h3 x-show="shown" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">Our <em>strategic approach</em> reflects our insight-driven perspective.</h3>
+      <p x-show="shown" x-transition.opacity.duration.2000ms>Our tactical, phased approach to analyzing and identifying opportunities and mitigating risk in real estate provides our clients with confidence and peace of mind in an often-fluctuating market. With our thorough and thoughtful process and our inherent ability to identify and challenge assumptions, we build lasting value for our clients.</p>
+      <a href="" class="button dark mt-12"><span><span>Learn more</span></span></a>
+    </div>
+
+    <div class="lg:w-1/2 mb-12 lg:mb-0">
+      <img  x-show="shown" x-transition.opacity.duration.2000ms src="https://picsum.photos/800" class="rounded-full" />
+    </div>
   </div>
 
-  <div class="lg:w-1/2 mb-12 lg:mb-0">
-    <img  x-show="shown" x-transition.opacity.duration.2000ms src="https://picsum.photos/800" class="rounded-full" />
-  </div>
-</div>
+  <div x-data="{ shown: false }" x-intersect.half="shown = true" class="flex flex-col-reverse lg:flex-row-reverse bg-light-gray px-12 py-9 md:p-16 gap-x-[14.6590vw]">
+    <div class="flex flex-col justify-end lg:w-1/2">
+      <h3 x-show="shown" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">The <em>values we share</em> with our clients create long-term partnerships.</h3>
+      <p x-show="shown" x-transition.opacity.duration.2000ms>A statement about how shared values drive great collaborations. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <a href="" class="button dark mt-12"><span><span>Learn more</span></span></a>
+    </div>
 
-<div x-data="{ shown: false }" x-intersect.half="shown = true" class="flex flex-col-reverse lg:flex-row-reverse bg-light-gray px-12 py-9 md:p-[11.36vw] gap-x-[14.6590vw]">
-  <div class="flex flex-col justify-end lg:w-1/2">
-    <h3 x-show="shown" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">The <em>values we share</em> with our clients create long-term partnerships.</h3>
-    <p x-show="shown" x-transition.opacity.duration.2000ms>A statement about how shared values drive great collaborations. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    <a href="" class="button dark mt-12"><span><span>Learn more</span></span></a>
+    <div class="lg:w-1/2 mb-12 lg:mb-0">
+      <img class="w-full" x-show="shown" x-transition.opacity.duration.2000ms src="https://picsum.photos/400/600/" />
+    </div>
   </div>
-
-  <div class="lg:w-1/2 mb-12 lg:mb-0">
-    <img class="w-full" x-show="shown" x-transition.opacity.duration.2000ms src="https://picsum.photos/400/600/" />
-  </div>
-</div>
+</section>
