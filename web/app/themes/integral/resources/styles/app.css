@@ -118,6 +118,11 @@
 
 .button > span > span {
   padding: 0 20px;
+  color: #ffffff;
+}
+
+.button.dark > span > span {
+  color: #191919;
 }
 
 .button>span>span:after {
@@ -187,7 +192,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 5px;
+  width: 4px;
   height: 100%;
   max-height: 0;
   background-color: #424041;

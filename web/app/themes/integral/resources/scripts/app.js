@@ -14,6 +14,9 @@ domReady(async () => {
   Alpine.plugin(intersect)
   Alpine.start()
 
+  /**
+   * Horizontal Accordion
+   */
   const panes = document.querySelectorAll('.pane');
   let activePaneIndex = 0;
 
@@ -25,43 +28,16 @@ domReady(async () => {
     });
   });
 
-
-
-// var myElement = document.getElementById('my-element');
-// var bounding = myElement.getBoundingClientRect();
-// var myElementHeight = myElement.offsetHeight;
-// var myElementWidth = myElement.offsetWidth;
-
-// function elementInViewport() {
-
-//   var bounding = myElement.getBoundingClientRect();
-
-//   if (bounding.top >= -myElementHeight
-//     && bounding.left >= -myElementWidth
-//     && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + myElementWidth
-//     && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight) {
-
-//     console.log('Element is in the viewport!');
-//   } else {
-
-//     console.log('Element is NOT in the viewport!');
-//   }
-// }
-
-
-
-    // var myElement = document.getElementById('my-element');
-    // var bounding = timeline.getBoundingClientRect();
-    // var myElementHeight = myElement.offsetHeight;
-    // var myElementWidth = myElement.offsetWidth;
-
-
-  const timelines = document.querySelectorAll('.progress-wrapper');
+  /**
+   * Horizontal Scrubber
+   */
+  const timelines     = document.querySelectorAll('.progress-wrapper');
+  const vHeightOffset = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) / 1.25;
 
   timelines.forEach((timeline, index) => {
     window.addEventListener('scroll', () => {
-      if (timeline.getBoundingClientRect().bottom - 400 <= timeline.offsetHeight) {
-        var elementHeight = timeline.getBoundingClientRect().bottom - 400;
+      if (timeline.getBoundingClientRect().bottom - vHeightOffset <= timeline.offsetHeight) {
+        var elementHeight = timeline.getBoundingClientRect().bottom - vHeightOffset;
         var scroll = (elementHeight - timeline.offsetHeight) * -1;
         var percentage = (100 * scroll) / timeline.offsetHeight;
 
@@ -72,34 +48,9 @@ domReady(async () => {
     });
   });
 
-
-
-
-
-
-
-  // let observer = new IntersectionObserver((entries, observer) => {
-  //   entries.forEach(entry => {
-
-  //     if(entry.isIntersecting) {
-  //       console.log(entry);
-  //       entry.target.src = entry.target.dataset.src;
-  //       observer.unobserve(entry.target);
-  //     } else {
-  //       console.log('not');
-  //     }
-  //   });
-  // }, {rootMargin: "0px 0px -50% 0px"});
-
-  // document.querySelectorAll('.progress-wrapper').forEach(p => { observer.observe(p) });
-
-
-
-
-
-
-
-
+  /**
+   *
+   */
   const menuToggle = document.querySelector('.c-hamburger');
   const menu = document.querySelector('.nav-primary');
   menuToggle.addEventListener('click', () => {
