@@ -10,35 +10,39 @@
   </div>
 </div>
 
-<div x-data="{ shown: false }" x-intersect.half="shown = true" class="flex flex-col-reverse lg:flex-row bg-light-gray px-12 py-9 md:p-[11.36vw] gap-x-[14.6590vw]">
-  <div class="flex flex-col justify-end lg:w-1/2">
-    <h3 x-show="shown" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">We view each investment as a fresh opportunity to uncover value.</h3>
-    <p x-show="shown" x-transition.opacity.duration.2000ms>With three decades of experience, most recently overseeing a real estate fund, we are able to manage investments as well as function as an advisor. We look at transactions as problem-solving opportunities, identifying value not uncovered by others. Our long-term, strategic partners enhance our work and create new pathways to success.</p>
+<section class="progress-wrapper">
+  <div class="progress-indicator"></div>
+
+  <div x-data="{ shown: false }" x-intersect.half="shown = true" class="flex flex-col-reverse lg:flex-row bg-light-gray p-12 md:p-16 lg:pt-32 gap-x-[14.6590vw]">
+    <div class="flex flex-col justify-end lg:w-1/2">
+      <h3 x-show="shown" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">We view each investment as a fresh opportunity to uncover value.</h3>
+      <p x-show="shown" x-transition.opacity.duration.2000ms>With three decades of experience, most recently overseeing a real estate fund, we are able to manage investments as well as function as an advisor. We look at transactions as problem-solving opportunities, identifying value not uncovered by others. Our long-term, strategic partners enhance our work and create new pathways to success.</p>
+    </div>
+
+    <div class="lg:w-1/2 mb-12 lg:mb-0">
+      <img class="w-full" x-show="shown" x-transition.opacity.duration.2000ms src="@asset('images/what-we-do-investments.jpg')" />
+    </div>
   </div>
 
-  <div class="lg:w-1/2 mb-12 lg:mb-0">
-    <img class="w-full" x-show="shown" x-transition.opacity.duration.2000ms src="@asset('images/what-we-do-investments.jpg')" />
-  </div>
-</div>
+  <div x-data="{ shown: false }" x-intersect.half="shown = true" class="flex flex-col-reverse lg:flex-row-reverse bg-light-gray p-12 md:p-16 lg:pt-32 gap-x-[14.6590vw]">
+    <div class="flex flex-col justify-end lg:w-1/2">
+      <h3 x-show="shown" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">We view each investment as a fresh opportunity to uncover value.</h3>
+      <p x-show="shown" x-transition.opacity.duration.2000ms>With three decades of experience, most recently overseeing a real estate fund, we are able to manage investments as well as function as an advisor. We look at transactions as problem-solving opportunities, identifying value not uncovered by others. Our long-term, strategic partners enhance our work and create new pathways to success.</p>
+    </div>
 
-<div x-data="{ shown: false }" x-intersect.half="shown = true" class="flex flex-col-reverse lg:flex-row-reverse bg-light-gray px-12 py-9 md:p-[11.36vw] gap-x-[14.6590vw]">
-  <div class="flex flex-col justify-end lg:w-1/2">
-    <h3 x-show="shown" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">We view each investment as a fresh opportunity to uncover value.</h3>
-    <p x-show="shown" x-transition.opacity.duration.2000ms>With three decades of experience, most recently overseeing a real estate fund, we are able to manage investments as well as function as an advisor. We look at transactions as problem-solving opportunities, identifying value not uncovered by others. Our long-term, strategic partners enhance our work and create new pathways to success.</p>
-  </div>
-
-  <div class="lg:w-1/2 mb-12 lg:mb-0">
-    <img class="w-full" x-show="shown" x-transition.opacity.duration.2000ms src="@asset('images/what-we-do-asset-management.jpg')" class="rounded-full" />
-  </div>
-</div>
-
-<div x-data="{ shown: false }" x-intersect.half="shown = true" class="flex flex-col-reverse lg:flex-row bg-light-gray px-12 py-9 md:p-[11.36vw] gap-x-[14.6590vw]">
-  <div class="flex flex-col justify-end lg:w-1/2">
-    <h3 x-show="shown" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">We view each investment as a fresh opportunity to uncover value.</h3>
-    <p x-show="shown" x-transition.opacity.duration.2000ms>With three decades of experience, most recently overseeing a real estate fund, we are able to manage investments as well as function as an advisor. We look at transactions as problem-solving opportunities, identifying value not uncovered by others. Our long-term, strategic partners enhance our work and create new pathways to success.</p>
+    <div class="lg:w-1/2 mb-12 lg:mb-0">
+      <img class="w-full" x-show="shown" x-transition.opacity.duration.2000ms src="@asset('images/what-we-do-asset-management.jpg')" class="rounded-full" />
+    </div>
   </div>
 
-  <div class="lg:w-1/2 mb-12 lg:mb-0">
-    <img class="w-full" x-show="shown" x-transition.opacity.duration.2000ms src="@asset('images/what-we-do-advisory.jpg')" />
+  <div x-data="{ shown: false }" x-intersect.half="shown = true" class="flex flex-col-reverse lg:flex-row bg-light-gray p-12 md:p-16 lg:pt-32 gap-x-[14.6590vw]">
+    <div class="flex flex-col justify-end lg:w-1/2">
+      <h3 x-show="shown" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">We view each investment as a fresh opportunity to uncover value.</h3>
+      <p x-show="shown" x-transition.opacity.duration.2000ms>With three decades of experience, most recently overseeing a real estate fund, we are able to manage investments as well as function as an advisor. We look at transactions as problem-solving opportunities, identifying value not uncovered by others. Our long-term, strategic partners enhance our work and create new pathways to success.</p>
+    </div>
+
+    <div class="lg:w-1/2 mb-12 lg:mb-0">
+      <img class="w-full" x-show="shown" x-transition.opacity.duration.2000ms src="@asset('images/what-we-do-advisory.jpg')" />
+    </div>
   </div>
-</div>
+</section>

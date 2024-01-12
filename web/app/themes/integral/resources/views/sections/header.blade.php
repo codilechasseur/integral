@@ -1,5 +1,5 @@
-<header class="fixed z-10 w-full flex justify-between bg-transparent px-4 md:px-8 lg:px-16 py-6 md:py-8 lg:py-12">
-  <a class="brand z-10" href="{{ home_url('/') }}">
+<header class="fixed z-20 w-full flex justify-between bg-transparent px-4 md:px-8 lg:px-16 py-6 md:py-8 lg:py-12">
+  <a class="brand z-20" href="{{ home_url('/') }}">
     @svg('images/logo')
   </a>
 
@@ -21,7 +21,7 @@
       ]) !!}
     </nav>
 
-    <div class="c-hamburger c-hamburger--collapse lg:hidden z-10">
+    <div class="c-hamburger c-hamburger--collapse lg:hidden z-20">
       <div class="c-hamburger-inner">
         <span class="c-hamburger-bar pointer-events-none"></span>
         <span class="c-hamburger-bar pointer-events-none"></span>

@@ -197,6 +197,8 @@
   max-height: 0;
   background-color: #424041;
   z-index: 10;
+
+  @apply left-6 lg:left-1/2;
 }
 
 .progress-wrapper > div:not(.progress-indicator):before {
@@ -207,8 +209,9 @@
   border-radius: 50%;
   background-color: #928D8E;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
+
+  @apply left-6 lg:left-1/2;
 }
 
 .progress-wrapper > div:not(.progress-indicator):after {
@@ -217,9 +220,10 @@
   width: 1px;
   height: 100%;
   background-color: #928D8E;
-  left: 50%;
   top: 0;
   transform: translateX(-50%);
+
+  @apply left-6 lg:left-1/2;
 }
 
 

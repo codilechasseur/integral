@@ -49,7 +49,7 @@ domReady(async () => {
   });
 
   /**
-   *
+   * Mobile Menu
    */
   const menuToggle = document.querySelector('.c-hamburger');
   const menu = document.querySelector('.nav-primary');
