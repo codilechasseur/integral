@@ -1,15 +1,15 @@
 <footer>
   {{-- @php(dynamic_sidebar('sidebar-footer')) --}}
 
-  <div class="pt-5 lg:pt-10 px-4 lg:px-16 text-white bg-[url('/images/bg-footer-mobile.png')] md:bg-[url('/images/bg-footer-tablet.png')] lg:bg-[url('/images/bg-footer-desktop.png')] bg-cover">
+  <div class="pt-5 lg:pt-10 px-4 md:px-8 lg:px-16 text-white bg-[url('/images/bg-footer-mobile.png')] md:bg-[url('/images/bg-footer-tablet.png')] lg:bg-[url('/images/bg-footer-desktop.png')] bg-cover">
     <div class="flex flex-col lg:flex-row justify-between">
       <div class="flex flex-col gap-4">
         <span class="uppercase">Contact:</span>
 
-        <ul class="flex flex-col lg:flex-row gap-[18px] lg:divide-x lg:divide-white">
-          <li><a href="tel://000.000.00.00">000.000.00.00</a></li>
-          <li><a href="mailto:info@integral.ca">info@integral.ca</a></li>
-          <li><a href="https://linkedin.com">LinkedIn</a></li>
+        <ul class="flex flex-col lg:flex-row gap-[18px] lg:gap-0">
+          <li class=""><a class="lg:px-4 lg:last:pl-0 lg:border-r" href="tel://000.000.00.00">000.000.00.00</a></li>
+          <li class=""><a class="lg:px-4 lg:border-r" href="mailto:info@integral.ca">info@integral.ca</a></li>
+          <li class=""><a class="lg:px-4 lg:last:pr-0" href="https://linkedin.com">LinkedIn</a></li>
         </ul>
       </div>
 
