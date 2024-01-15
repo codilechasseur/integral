@@ -12,7 +12,7 @@
 
 <div class="flex flex-col lg:flex-row">
   <div>
-    <img src="@asset('images/about-strategic-approach.jpg')" class="block" />
+    <img src="@asset('images/about-strategic-approach.jpg')" class="block h-full object-cover" />
   </div>
 
   <div class="lg:w-[44vw] p-4 md:p-8 lg:p-16 flex flex-col justify-end gap-y-11 bg-light-gray lg:bg-gradient-to-b from-dark-gray to-charcoal">
@@ -48,7 +48,7 @@
 
 <div class="flex flex-col lg:flex-row-reverse">
   <div>
-    <img src="@asset('images/about-our-values.jpg')" class="block" />
+    <img src="@asset('images/about-our-values.jpg')" class="block h-full object-cover" />
   </div>
 
   <div class="lg:w-[44vw] p-4 md:p-8 lg:p-16 flex flex-col justify-end gap-y-11 bg-light-gray lg:bg-gradient-to-b from-dark-gray to-charcoal">

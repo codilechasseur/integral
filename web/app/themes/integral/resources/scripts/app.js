@@ -53,9 +53,11 @@ domReady(async () => {
    */
   const menuToggle = document.querySelector('.c-hamburger');
   const menu = document.querySelector('.nav-primary');
+  const body = document.querySelector('body');
   menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
     menu.classList.toggle('active');
+    body.classList.toggle('menu-active');
   });
 });
 

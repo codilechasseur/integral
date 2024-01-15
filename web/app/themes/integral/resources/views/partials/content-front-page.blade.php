@@ -21,32 +21,32 @@
   </div>
 </div>
 
-<div class="bg-dust flex flex-col lg:flex-row lg:h-[80vh]">
-  <div class="flex flex-col justify-end bg-gradient-to-b lg:bg-gradient-to-br from-dark-gray to-charcoal lg:w-2/5 px-4 pt-36 pb-4 md:px-8 lg:pt-0 lg:p-16 gap-y-12 lg:min-w-[650px]">
-    <h3 class="font-serif text-medium-gray text-9xl md:text-11xl lg:text-12xl leading-4 tracking-wider">Unlocking <em class="block text-white">the Potential</em> in Real Estate</h3>
-    <p class="text-white text-lg md:text-xl lg:text-3xl leading-10 tracking-tight font-light">Managing real estate investments today has never been more complex and the risks have never been higher. Our proven strategic approach, rooted in financial due diligence and creative problem solving delivers long-term results for our clients.</p>
+<div class="bg-dust flex flex-col xl:flex-row xl:h-[80vh]">
+  <div class="flex flex-col justify-end bg-gradient-to-b xl:bg-gradient-to-br from-dark-gray to-charcoal xl:w-2/5 px-4 pt-36 pb-4 md:px-8 xl:pt-0 xl:p-16 gap-y-12 xl:min-w-[650px]">
+    <h3 class="font-serif text-medium-gray text-9xl md:text-11xl xl:text-12xl leading-4 tracking-wider">Unlocking <em class="block text-white">the Potential</em> in Real Estate</h3>
+    <p class="text-white text-lg md:text-xl xl:text-3xl leading-10 tracking-tight font-light">Managing real estate investments today has never been more complex and the risks have never been higher. Our proven strategic approach, rooted in financial due diligence and creative problem solving delivers long-term results for our clients.</p>
     <a href="#" class="button"><span><span>Learn more about services</span></span></a>
   </div>
 
-  <div class="flex flex-col lg:flex-row w-full overflow-hidden">
-    <div class="flex flex-col-reverse lg:block pane active bg-gradient-to-r from-[#6D696A] to-[#858081]">
+  <div class="flex flex-col xl:flex-row w-full overflow-hidden">
+    <div class="flex flex-col-reverse xl:block pane active bg-gradient-to-r from-[#6D696A] to-[#858081]">
       <div class="content font-serif text-7xl text-dark-gray">
         Three decades in the business allows me to provide an unfiltered perspective.
       </div>
 
-      <div class="lg:absolute lg:right-0 lg:top-0 h-full flex justify-between items-center lg:[writing-mode:vertical-lr] uppercase text-3xl text-white p-4 md:p-8 lg:py-14 lg:px-0 lg:w-[120px]">
-        <div class="flex gap-x-2 items-top lg:items-baseline"><span class="pt-0.5 text-2xs">01</span> Investments</div>
+      <div class="xl:absolute xl:right-0 xl:top-0 h-full flex justify-between items-center xl:[writing-mode:vertical-lr] uppercase text-3xl text-white p-4 md:p-8 xl:py-14 xl:px-0 xl:w-[120px]">
+        <div class="flex gap-x-2 items-top xl:items-baseline"><span class="pt-0.5 text-2xs">01</span> Investments</div>
         <div class="bg-gray-900 flex items-center justify-center">@svg('images/icon-arrows')</div>
       </div>
     </div>
 
-    <div class="flex flex-col-reverse lg:block pane bg-medium-gray">
+    <div class="flex flex-col-reverse xl:block pane bg-medium-gray">
       <div class="content font-serif text-7xl">
         Realize your vision
       </div>
 
-      <div class="lg:absolute lg:right-0 lg:top-0 h-full flex justify-between items-center lg:[writing-mode:vertical-lr] uppercase text-3xl text-white p-4 md:p-8 lg:py-14 lg:px-0 lg:w-[120px]">
-        <div class="flex gap-x-2 items-top lg:items-baseline"><span class="pt-0.5 text-2xs">02</span> Asset & Portfolio Management</div>
+      <div class="xl:absolute xl:right-0 xl:top-0 h-full flex justify-between items-center xl:[writing-mode:vertical-lr] uppercase text-3xl text-white p-4 md:p-8 xl:py-14 xl:px-0 xl:w-[120px]">
+        <div class="flex gap-x-2 items-top xl:items-baseline"><span class="pt-0.5 text-2xs">02</span> Asset & Portfolio Management</div>
         <div class="bg-gray-900 flex items-center justify-center">@svg('images/icon-arrow')</div>
       </div>
     </div>
@@ -56,8 +56,8 @@
         Discover the world
       </div>
 
-      <div class="lg:absolute lg:right-0 lg:top-0 h-full flex justify-between items-center lg:[writing-mode:vertical-lr] uppercase text-3xl text-white p-4 md:p-8 lg:py-14 lg:px-0 lg:w-[120px]">
-        <div class="flex gap-x-2 items-top lg:items-baseline"><span class="pt-0.5 lg:pt-0 text-2xs">03</span> <span>Advisory</span></div>
+      <div class="xl:absolute xl:right-0 xl:top-0 h-full flex justify-between items-center xl:[writing-mode:vertical-lr] uppercase text-3xl text-white p-4 md:p-8 xl:py-14 xl:px-0 xl:w-[120px]">
+        <div class="flex gap-x-2 items-top xl:items-baseline"><span class="pt-0.5 xl:pt-0 text-2xs">03</span> <span>Advisory</span></div>
         <div class="bg-gray-900 flex items-center justify-center">@svg('images/icon-reticle')</div>
       </div>
     </div>

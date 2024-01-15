@@ -53,6 +53,51 @@
 }
 
 /**
+** Alt Header
+**/
+.error404 header .brand svg g,
+.contact header .brand svg g,
+.thank-you header .brand svg g {
+  fill: #191919;
+}
+
+.error404.menu-active header .brand svg g,
+.contact.menu-active header .brand svg g,
+.thank-you.menu-active header .brand svg g {
+  fill: #fff;
+}
+
+.error404 header #menu-primary-navigation,
+.contact header #menu-primary-navigation,
+.thank-you header #menu-primary-navigation {
+  @apply text-white lg:text-charcoal;
+}
+
+.error404 header .c-hamburger .c-hamburger-bar:before,
+.contact header .c-hamburger .c-hamburger-bar:before,
+.thank-you header .c-hamburger .c-hamburger-bar:before,
+.error404 header .c-hamburger:hover .c-hamburger-bar:before,
+.contact header .c-hamburger:hover .c-hamburger-bar:before,
+.thank-you header .c-hamburger:hover .c-hamburger-bar:before {
+  background-color: #191919;
+}
+
+.error404 header .c-hamburger.active .c-hamburger-bar:before,
+.contact header .c-hamburger.active .c-hamburger-bar:before,
+.thank-you header .c-hamburger.active .c-hamburger-bar:before {
+  background-color: #fff;
+}
+
+.contact .gform_wrapper .button span span {
+  color: #191919;
+}
+
+.contact .gform_wrapper .button span:before,
+.contact .gform_wrapper .button span:after {
+  border-color: #191919;
+}
+
+/**
 ** Button
 **/
 .button {
@@ -60,6 +105,7 @@
   background: none;
   width: fit-content;
   z-index: 10;
+  @apply shadow-none !important;
 }
 
 .button span {
@@ -235,7 +281,7 @@
 ** Gravity Forms
 **/
 .gform_wrapper {
-  @apply max-w-sm;
+  @apply lg:max-w-2xl;
 }
 
 .gform_wrapper .gform_heading {
@@ -248,7 +294,7 @@
 
 .gform_wrapper label.gfield_label,
 .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
-  @apply font-sans text-xs font-medium uppercase;
+  @apply font-sans text-xs font-light;
 }
 
 .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
@@ -268,22 +314,22 @@
 .gform_wrapper input[type="time"],
 .gform_wrapper input[type="week"],
 .gform_wrapper input[type="url"],
-.gform_wrapper select,
-.gform_wrapper textarea,
+.gform_wrapper select.gfield_select,
+.gform_wrapper textarea.textarea,
 /* prettier-ignore */
 .gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) {
-  @apply border-none py-1 px-2 text-sm font-light;
+  @apply border-none rounded-none py-2 px-2 text-xl font-light bg-[#eee] h-auto;
 
   transition: all 200ms ease-in-out;
 
-  /* &:focus {
-    @apply border-grey outline-none shadow;
-  } */
+  &:focus {
+    @apply border-dark-gray outline-none shadow;
+  }
 }
 
-.gform_wrapper .button,
+.gform_wrapper .gform_footer .button,
 .gform_wrapper .gform_footer input[type="submit"] {
-  @extend %btn;
+  @apply appearance-none bg-transparent px-0 !important;
 }
 
 .gform_wrapper .gfield_required {
@@ -322,10 +368,12 @@
 
 
 
-.error404 {
+.error404,
+.thank-you {
   @apply bg-dust;
 }
 
-.error404 #main {
+.error404 #main,
+.thank-you #main {
   @apply items-end flex p-4 md:p-8 lg:p-16 min-h-[80vh]
 }
