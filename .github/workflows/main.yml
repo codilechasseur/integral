@@ -1,0 +1,81 @@
+name: Build and deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      SSH_PORT: 64212
+      SSH_HOST: 35.199.174.117
+      SSH_USERNAME: integral
+      KINSTA_FOLDER: /www/integral_318/ # Kinsta Root folder (end with "/")
+      THEME_FOLDER: web/app/themes/integral
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '19.1.0'
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+
+      - name: Create .env file
+        uses: SpicyPizza/create-envfile@v1
+        with:
+          envkey_PLUGIN_ACF_KEY: ${{ secrets.PLUGIN_ACF_KEY }}
+          envkey_WP_PLUGIN_GF_KEY: ${{ secrets.WP_PLUGIN_GF_KEY }}
+
+      - name: Validate composer.json and composer.lock
+        run: composer validate --no-check-all
+
+      - name: Install Composer dependencies
+        if: ${{ contains(github.event.head_commit.message, 'purge') || steps.composer-cache.outputs.cache-hit != 'true' }}
+        run: composer install --no-cache --ignore-platform-reqs
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-${{ env.cache-name }}-
+            ${{ runner.os }}-npm-
+            ${{ runner.os }}-
+
+      - name: Install theme PHP dependencies
+        run: cd ${{ env.THEME_FOLDER }} && composer install --prefer-dist --no-progress --no-dev --ignore-platform-reqs
+
+      - name: Install and build JS dependencies
+        run: cd ${{ env.THEME_FOLDER }} && npm install && npm run build:production
+
+      - name: Copying files to server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ env.SSH_HOST }}
+          port: ${{ env.SSH_PORT }}
+          username: ${{ env.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          source: ".,!.git*,!.env,!${{ env.THEME_FOLDER }}/node_modules"
+          target: ${{ env.KINSTA_FOLDER }}public/releases/${{ github.sha }}
+          rm: ${{ contains(github.event.head_commit.message, 'purge') }}
+
+      - name: Symlinks
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ env.SSH_HOST }}
+          port: ${{ env.SSH_PORT }}
+          username: ${{ env.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            rm -rf ${{ env.KINSTA_FOLDER }}public/releases/${{ github.sha }}/web/app/uploads
+            ln -sfn ${{ env.KINSTA_FOLDER }}public/shared/uploads ${{ env.KINSTA_FOLDER }}public/releases/${{ github.sha }}/web/app
+            cp ${{ env.KINSTA_FOLDER }}public/shared/.env ${{ env.KINSTA_FOLDER }}public/releases/${{ github.sha }}
+            ln -sfn ${{ env.KINSTA_FOLDER }}public/releases/${{ github.sha }} ${{ env.KINSTA_FOLDER }}public/current
+            cd ${{ env.KINSTA_FOLDER }}public/releases/${{ github.sha }}/web && wp kinsta cache purge && wp cache flush
