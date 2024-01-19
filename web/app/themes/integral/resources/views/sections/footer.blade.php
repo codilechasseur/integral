@@ -9,7 +9,7 @@
         <ul class="flex flex-col lg:flex-row gap-[18px] lg:gap-0">
           <li class=""><a class="lg:px-4 lg:last:pl-0 lg:border-r" href="tel://000.000.00.00">000.000.00.00</a></li>
           <li class=""><a class="lg:px-4 lg:border-r" href="mailto:info@integral.ca">info@integral.ca</a></li>
-          <li class=""><a class="lg:px-4 lg:last:pr-0" href="https://linkedin.com">LinkedIn</a></li>
+          <li class=""><a class="lg:px-4 lg:last:pr-0" href="https://linkedin.com" target="_blank">LinkedIn</a></li>
         </ul>
       </div>
 

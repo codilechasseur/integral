@@ -1,6 +1,6 @@
 <div class="px-4 md:px-8 lg:px-16 bg-light-gray pt-[325px]">
   <div class="flex flex-col gap-11 lg:max-w-md">
-    <h1 class="font-serif text-9xl md:text-10xl lg:text-12xl leading-4 tracking-wide text-dark-gray">Contact</h1>
+    <h1 class="font-serif text-9xl md:text-10xl lg:text-12xl leading-4 tracking-wide text-charcoal">Contact</h1>
 
     <p class="text-xs md:text-sm lg:text-base text-charcoal leading-11 font-light">Looking for insight and support to maximize your investment opportunities? Complete the form below and let us know some of the questions you have about your assets. We’re here to help.</p>
   </div>

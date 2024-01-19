@@ -1,6 +1,11 @@
-<header class="fixed z-20 w-full flex justify-between bg-transparent px-4 md:px-8 lg:px-16 py-6 md:py-8 lg:py-12">
+<header
+  x-data="{atTop:true}"
+  @scroll.window="atTop = window.pageYOffset>50?false:true"
+  class="fixed z-20 w-full flex justify-between px-4 md:px-8 lg:px-16 py-6 md:py-8 lg:py-12"
+  :class="(atTop === false)?'bg-light-gray':'bg-transparent'"
+>
   <a class="brand z-20" href="{{ home_url('/') }}">
-    @svg('images/logo')
+    @svg('images/logo', 'w-32 lg:w-auto')
   </a>
 
   @if (has_nav_menu('primary_navigation'))
@@ -12,7 +17,7 @@
         'theme_location' => 'primary_navigation',
         'menu_class'     => '
           flex flex-col lg:flex-row
-          items-center justify-center
+          items-start justify-center
           h-full
           w-full
           gap-y-8 lg:gap-x-14
