@@ -18,8 +18,7 @@
   <div class="lg:w-[44vw] p-4 md:p-8 lg:p-16 flex flex-col justify-end gap-y-11 bg-light-gray lg:bg-gradient-to-b from-dark-gray to-charcoal">
     <h3 class="-mt-[75px] md:-mt-[86px] lg:mt-0 text-9xl lg:text-12xl leading-10 lg:leading-4 tracking-wider text-medium-gray font-serif"><em class="text-white block">Strategic</em> Approach</h3>
     <div class="text-lg md:text-xl lg:text-3xl leading-10 md:leading-9 lg:leading-10 tracking-tight text-charcoal lg:text-white font-light">
-      <p>We take a measured, holistic approach to analyzing each project. Our proven process means we work through defined and distinct phases to build a long-term strategic platform for our clients’ investments.</p>
-      <p>We are results-driven, focused on building wealth as we build trusted relationships.</p>
+      <p>We take a measured, holistic approach to analyzing each project. Our proven process means we work through defined and distinct phases to build a long-term strategic platform for our clients’ investments. We are results-driven, focused on building wealth as we build trusted relationships.</p>
     </div>
   </div>
 </div>

@@ -1,11 +1,11 @@
 <header
   x-data="{atTop:true}"
-  @scroll.window="atTop = window.pageYOffset>50?false:true"
-  class="fixed z-20 w-full flex justify-between px-4 md:px-8 lg:px-16 py-6 md:py-8 lg:py-12"
-  :class="(atTop === false)?'bg-light-gray':'bg-transparent'"
+  @scroll.window="atTop = window.pageYOffset>1?false:true"
+  class="fixed z-20 w-full flex justify-between px-4 md:px-8 lg:px-16 transition-all duration-200"
+  :class="(atTop === false)?'bg-light-gray text-charcoal py-3 md:py-4 lg:py-6':'text-white bg-transparent py-6 md:py-8 lg:py-12'"
 >
   <a class="brand z-20" href="{{ home_url('/') }}">
-    @svg('images/logo', 'w-32 lg:w-auto')
+    @svg('images/logo', 'w-[164px] lg:w-[234px]')
   </a>
 
   @if (has_nav_menu('primary_navigation'))
@@ -17,11 +17,11 @@
         'theme_location' => 'primary_navigation',
         'menu_class'     => '
           flex flex-col lg:flex-row
-          items-start justify-center
+          items-center lg:items-start justify-center
           h-full
           w-full
           gap-y-8 lg:gap-x-14
-          uppercase lg:normal-case text-white text-lg font-light',
+          uppercase lg:normal-case text-lg font-light',
         'echo'           => false
       ]) !!}
     </nav>

@@ -37,14 +37,19 @@
 /**
 ** Menu
 **/
-.current-menu-item a,
+.menu-active {
+  overflow: hidden;
+}
+
+li.active a,
 .menu-item a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-.c-hamburger .c-hamburger-inner {
+div.c-hamburger > .c-hamburger-inner {
   @apply flex flex-col gap-x-8;
+  top: 10px;
 }
 
 .nav-primary.active {
@@ -57,7 +62,8 @@
 **/
 .error404 header .brand svg g,
 .contact header .brand svg g,
-.thank-you header .brand svg g {
+.thank-you header .brand svg g,
+header.bg-light-gray svg g {
   fill: #191919;
 }
 
@@ -76,9 +82,11 @@
 .error404 header .c-hamburger .c-hamburger-bar:before,
 .contact header .c-hamburger .c-hamburger-bar:before,
 .thank-you header .c-hamburger .c-hamburger-bar:before,
+header.bg-light-gray .c-hamburger .c-hamburger-bar:before,
 .error404 header .c-hamburger:hover .c-hamburger-bar:before,
 .contact header .c-hamburger:hover .c-hamburger-bar:before,
-.thank-you header .c-hamburger:hover .c-hamburger-bar:before {
+.thank-you header .c-hamburger:hover .c-hamburger-bar:before,
+header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
   background-color: #191919;
 }
 
@@ -95,6 +103,19 @@
 .contact .gform_wrapper .button span:before,
 .contact .gform_wrapper .button span:after {
   border-color: #191919;
+}
+
+.menu-active header .brand svg g {
+  fill: #fff;
+}
+
+.menu-active header .c-hamburger .c-hamburger-bar:before,
+.menu-active header .c-hamburger:hover .c-hamburger-bar:before {
+  background-color: #fff;
+}
+
+.menu-active header nav ul {
+  color: #fff;
 }
 
 /**
@@ -123,7 +144,7 @@
   left: 0;
   width: 20px;
   height: 0;
-  border: 1px solid white;
+  border: 2px solid white;
   border-left: none;
   border-bottom: none;
   transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
@@ -134,8 +155,8 @@
 }
 
 .button:hover > span:after {
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
   transition: width 0.3s ease-out, height 0.15s ease-out 0.3s;
 }
 
@@ -146,7 +167,7 @@
   left: 0;
   width: 0;
   height: 20px;
-  border: 1px solid white;
+  border: 2px solid white;
   border-right: none;
   border-bottom: none;
   transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
@@ -157,8 +178,8 @@
 }
 
 .button:hover > span:before {
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
   transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
 }
 
@@ -176,15 +197,15 @@
   position: absolute;
   bottom: 0;
   left: 0%;
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   opacity: 0;
 }
 
 .button:hover > span > span:after {
   opacity: 1;
-  border-bottom: 1px solid white;
-  width: calc(100% - 1px);
+  border-bottom: 2px solid white;
+  width: calc(100% - 2px);
   height: 1px;
   transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
 }
@@ -318,13 +339,17 @@
 .gform_wrapper textarea.textarea,
 /* prettier-ignore */
 .gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) {
-  @apply border-none rounded-none py-2 px-2 text-xl font-light bg-[#eee] h-auto;
+  @apply border-none rounded-none py-2 px-2 text-[1.15rem] font-light bg-[#eee] h-auto;
 
   transition: all 200ms ease-in-out;
 
   &:focus {
     @apply border-dark-gray outline-none shadow;
   }
+}
+
+.gform_wrapper .gform_body .gform_fields {
+  row-gap: 28px;
 }
 
 .gform_wrapper .gform_footer .button,
@@ -359,6 +384,10 @@
 
 .gform_validation_container {
   display: none !important;
+}
+
+.gform_required_legend {
+  @apply hidden;
 }
 
 
