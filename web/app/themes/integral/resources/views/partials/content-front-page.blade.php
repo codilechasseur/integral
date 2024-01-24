@@ -6,14 +6,14 @@
   <div class="absolute bottom-0 left-0 px-4 md:px-8 lg:px-16 pb-6 md:pb-8 lg:pb-12">
     <h2 class="font-serif text-10xl leading-11 tracking-[2.16px] md:tracking-[2.76px] lg:tracking-[3.36px] mb-6 md:mb-8 lg:mb-10">integral:</h2>
 
-    <div class="flex gap-x-5 md:gap-x-7 text-base mb-5 md:mb-7">
+    <div class="flex gap-x-5 md:gap-x-7 text-base mb-5 md:mb-7 font-light">
       <p>[in • teg • ruhl]</p>
       <p>adjective</p>
     </div>
 
     <hr class="border-2" />
 
-    <ol class="list-decimal list-inside mt-7 flex flex-col space-y-3">
+    <ol class="list-decimal list-inside mt-7 flex flex-col space-y-3 font-light">
       <li>Founded on integrity, having a strong moral compass</li>
       <li>Essential to a full and comprehensive perspective</li>
       <li>Built on astute insights and analysis</li>
