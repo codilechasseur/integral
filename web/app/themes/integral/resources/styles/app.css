@@ -248,6 +248,24 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
 }
 
 
+.progress-wrapper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @apply bg-warm-gray;
+  z-index: 0;
+  transform: scale(0);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.8s;
+}
+
+.progress-wrapper.active:before {
+  transform: scale(1);
+  opacity: 1;
+}
 
 .progress-wrapper,
 .progress-wrapper > div:not(.progress-indicator) {
@@ -264,6 +282,7 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
   max-height: 0;
   background-color: #424041;
   z-index: 10;
+  transition: max-height 0.1s ease;
 
   @apply left-6 lg:left-1/2;
 }
@@ -278,7 +297,7 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
   top: 50%;
   transform: translate(-50%, -50%);
 
-  @apply left-6 lg:left-1/2;
+  @apply transition ease-in-out left-6 lg:left-1/2;
 }
 
 .progress-wrapper > div:not(.progress-indicator):after {
@@ -291,6 +310,14 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
   transform: translateX(-50%);
 
   @apply left-6 lg:left-1/2;
+}
+
+/* .progress-wrapper.active {
+  @apply bg-warm-gray;
+} */
+
+.progress-wrapper.active .progress-item:before {
+  @apply bg-dark-gray;
 }
 
 

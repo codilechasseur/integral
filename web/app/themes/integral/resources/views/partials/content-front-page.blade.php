@@ -64,9 +64,9 @@
   </div>
 </div>
 
-<section class="progress-wrapper">
+<section class="progress-wrapper bg-light-gray">
   <div class="progress-indicator"></div>
-  <div x-data="{ shown: false }" x-intersect.half="shown = true" class="flex flex-col-reverse lg:flex-row bg-light-gray px-12 py-9 md:py-16 md:px-32 lg:pt-32 gap-x-[14.6590vw]">
+  <div x-data="{ shown: false }" x-intersect.half="shown = true" class="progress-item flex flex-col-reverse lg:flex-row px-12 py-9 md:py-16 md:px-32 lg:pt-32 gap-x-[14.6590vw] transition ease-in-out">
     <div class="flex flex-col justify-end lg:w-1/2">
       <h3 x-show="shown" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">Our <em>strategic approach</em> reflects our insight-driven perspective.</h3>
       <p class="font-light leading-11" x-show="shown" x-transition.opacity.duration.2000ms>Our tactical, phased approach to analyzing and identifying opportunities and mitigating risk in real estate provides our clients with confidence and peace of mind in an often-fluctuating market. With our thorough and thoughtful process and our inherent ability to identify and challenge assumptions, we build lasting value for our clients.</p>
@@ -74,11 +74,14 @@
     </div>
 
     <div class="lg:w-1/2 mb-12 lg:mb-0">
-      <img  x-show="shown" x-transition.opacity.duration.2000ms src="https://picsum.photos/800" class="rounded-full" />
+      <img  x-show="shown" x-transition.opacity.duration.2000ms src="@asset('images/home-strategic-approach.png')" class="rounded-full" />
     </div>
   </div>
+</section>
 
-  <div x-data="{ shown: false }" x-intersect.half="shown = true" class="flex flex-col-reverse lg:flex-row-reverse bg-light-gray px-12 py-9 md:py-16 md:px-32 lg:pb-32 gap-x-[14.6590vw]">
+<section class="progress-wrapper bg-light-gray">
+  <div class="progress-indicator"></div>
+  <div x-data="{ shown: false }" x-intersect.half="shown = true" class="progress-item flex flex-col-reverse lg:flex-row-reverse px-12 py-9 md:py-16 md:px-32 lg:pb-32 gap-x-[14.6590vw] transition ease-in-out">
     <div class="flex flex-col justify-end lg:w-1/2">
       <h3 x-show="shown" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">The <em>values we share</em> with our clients create long-term partnerships.</h3>
       <p class="font-light leading-11" x-show="shown" x-transition.opacity.duration.2000ms>How we work is the foundation of our success. We are a collaborative, experienced partner who proudly lives by our values. Every day, we foster long-term, trusted relationships with our clients as together we build a legacy of net worth.</p>
@@ -86,7 +89,7 @@
     </div>
 
     <div class="lg:w-1/2 mb-12 lg:mb-0">
-      <img class="w-full" x-show="shown" x-transition.opacity.duration.2000ms src="https://picsum.photos/400/600/" />
+      <img class="w-full" x-show="shown" x-transition.opacity.duration.2000ms src="@asset('images/home-shared-values.jpg')" />
     </div>
   </div>
 </section>

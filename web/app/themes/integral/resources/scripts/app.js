@@ -35,15 +35,22 @@ domReady(async () => {
   const vHeightOffset = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) / 1.25;
 
   timelines.forEach((timeline, index) => {
+    var percentage = 0;
     window.addEventListener('scroll', () => {
       if (timeline.getBoundingClientRect().bottom - vHeightOffset <= timeline.offsetHeight) {
         var elementHeight = timeline.getBoundingClientRect().bottom - vHeightOffset;
         var scroll = (elementHeight - timeline.offsetHeight) * -1;
-        var percentage = (100 * scroll) / timeline.offsetHeight;
+        percentage = (100 * scroll) / timeline.offsetHeight;
 
-        document.querySelector('.progress-indicator').style.maxHeight = percentage + '%';
+        timeline.querySelector('.progress-indicator').style.maxHeight = percentage + '%';
+
+        if(percentage > 50) {
+          timeline.classList.add('active');
+        } else {
+          timeline.classList.remove('active');
+        }
       } else {
-        document.querySelector('.progress-indicator').style.maxHeight = 0
+        timeline.querySelector('.progress-indicator').style.maxHeight = 0
       };
     });
   });
