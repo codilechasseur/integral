@@ -25,6 +25,11 @@ domReady(async () => {
       panes[activePaneIndex].classList.remove('active');
       activePaneIndex = index;
       panes[activePaneIndex].classList.add('active');
+
+      panes[activePaneIndex].querySelector('.content').addEventListener('click', ()=> {
+        console.log(panes[activePaneIndex].dataset.url);
+        window.location.href = panes[activePaneIndex].dataset.url;
+      })
     });
   });
 

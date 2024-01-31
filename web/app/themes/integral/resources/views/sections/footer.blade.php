@@ -7,13 +7,13 @@
         <span class="uppercase">Contact:</span>
 
         <ul class="flex flex-col lg:flex-row gap-[18px] lg:gap-0">
-          <li class=""><a class="lg:px-4 lg:last:pl-0 lg:border-r" href="tel://000.000.00.00">000.000.00.00</a></li>
-          <li class=""><a class="lg:px-4 lg:border-r" href="mailto:info@integral.ca">info@integral.ca</a></li>
-          <li class=""><a class="lg:px-4 lg:last:pr-0" href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+          <li><a class="lg:px-4 lg:last:pl-0 lg:border-r" href="tel://000.000.00.00">000.000.00.00</a></li>
+          <li><a class="lg:px-4 lg:border-r" href="mailto:info@integral.ca">info@integral.ca</a></li>
+          <li><a class="lg:px-4 lg:last:pr-0" href="https://linkedin.com" target="_blank">LinkedIn</a></li>
         </ul>
       </div>
 
-      <ul class="flex justify-end flex-wrap uppercase gap-x-4 gap-y-2.5 max-w-md  ml-auto lg:ml-0 mt-52 md:mt-[424px] lg:mt-0">
+      {{-- <ul class="flex justify-end flex-wrap uppercase gap-x-4 gap-y-2.5 max-w-md  ml-auto lg:ml-0 mt-52 md:mt-[424px] lg:mt-0">
         <li>Vancouver</li>
         <li>Calgary</li>
         <li>Toronto</li>
@@ -21,7 +21,7 @@
         <li>Victoria</li>
         <li>Edmonton</li>
         <li>Saskatoon</li>
-      </ul>
+      </ul> --}}
     </div>
 
     @svg('images/tagline-mobile', 'md:hidden mt-11 ml-auto')

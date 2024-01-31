@@ -58,48 +58,53 @@
   </div>
 </div>
 
-<section class="bg-light-gray px-4 md:px-8 lg:px-16 py-16 md:py-20 lg:py-24 grid lg:grid-cols-4 lg:divide-x lg:divide-black gap-y-12 lg:gap-y-32">
-  <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0">
-    <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Integrity</h3>
-    <p class="text-xs lg:text-base font-light">Every day we instill trust in our clients by upholding the highest standard of ethics in our practice.</p>
-  </div>
+<section class="first progress-wrapper bg-light-gray">
+  <div class="progress-indicator"></div>
+  <div class="progress-item px-4 md:px-8 lg:px-16 py-16 md:py-20 lg:py-24 grid lg:grid-cols-4 gap-y-12 lg:gap-y-32">
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 border-r border-black">
+      <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Integrity</h3>
+      <p class="text-xs lg:text-base font-light">Every day we instill trust in our clients by upholding the highest standard of ethics in our practice.</p>
+    </div>
 
-  <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0">
-    <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Directness</h3>
-    <p class="text-xs lg:text-base font-light">We pride ourselves on providing our clients with a clear understanding of risk and our best recommendations to mitigate it.</p>
-  </div>
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0">
+      <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Directness</h3>
+      <p class="text-xs lg:text-base font-light">We pride ourselves on providing our clients with a clear understanding of risk and our best recommendations to mitigate it.</p>
+    </div>
 
-  <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0">
-    <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Relationships</h3>
-    <p class="text-xs lg:text-base font-light">We bring our extensive network of long-standing relationships to every client engagement and deeply appreciate the personal connections we build, embracing their goals as our own.</p>
-  </div>
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 border-r border-black">
+      <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Relationships</h3>
+      <p class="text-xs lg:text-base font-light">We bring our extensive network of long-standing relationships to every client engagement and deeply appreciate the personal connections we build, embracing their goals as our own.</p>
+    </div>
 
-  <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0">
-    <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Collaboration</h3>
-    <p class="text-xs lg:text-base font-light">We work with our clients to clearly set investment targets, then provide the tools and guidance needed to achieve these results. Our client engagement is driven by the spirit of teamwork essential to success.</p>
-  </div>
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0">
+      <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Collaboration</h3>
+      <p class="text-xs lg:text-base font-light">We work with our clients to clearly set investment targets, then provide the tools and guidance needed to achieve these results. Our client engagement is driven by the spirit of teamwork essential to success.</p>
+    </div>
 
-  <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0">
-    <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Creativity</h3>
-    <p class="text-xs lg:text-base font-light">We are inspired by the uniqueness of each challenge and deliver distinct, insight-driven solutions rather than a traditional formula.</p>
-  </div>
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 border-r border-black">
+      <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Creativity</h3>
+      <p class="text-xs lg:text-base font-light">We are inspired by the uniqueness of each challenge and deliver distinct, insight-driven solutions rather than a traditional formula.</p>
+    </div>
 
-  <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0">
-    <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Excellence</h3>
-    <p class="text-xs lg:text-base font-light">Every idea, opportunity or challenge we face is explored or solved with a deep commitment to finding the best solution possible for our clients. </p>
-  </div>
-</section>
-
-
-<div class="flex flex-col-reverse lg:flex-row bg-light-gray p-4 md:p-8 lg:p-[11.36vw] gap-x-[14.6590vw]">
-  <div class="flex flex-col justify-end lg:w-1/2">
-    <h3 class="text-sm uppercase mb-4 lg:mb-10">Leadership</h3>
-    <h4 class="font-serif text-dark-gray text-9xl lg:text-10xl leading-6 tracking-tight mb-8">Andrew Tong</h4>
-    <p class="text-xs lg:text-base leading-11 text-charcoal font-light">In the early 1990s, when Andrew began his career in real estate, the industry was significantly different than today. As his responsibilities grew over these 30 years, so did his perspective on the power of insightful real estate investments. Through his leadership and C-suite roles, Andrew has a built a consistent track record of delivering and creating value for stakeholders. His deep and extensive experience, most recently managing a real estate fund, has honed a rare set of skills and long-held relationships in the industry. Now with his own practice, Andrew brings his well-earned reputation for pragmatism, directness and results to Integral Real Estate Advisory.</p>
-    <a href="" class="button dark mt-12"><span><span>Linkedin</span></span></a>
-  </div>
-
-  <div class="lg:w-1/2 mb-12 lg:mb-0">
-    <img src="@asset('images/about-head-shot.jpg')" />
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0">
+      <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Excellence</h3>
+      <p class="text-xs lg:text-base font-light">Every idea, opportunity or challenge we face is explored or solved with a deep commitment to finding the best solution possible for our clients. </p>
+    </div>
   </div>
 </div>
+
+<section class="second progress-wrapper bg-medium-gray lg:bg-light-gray">
+  <div class="progress-indicator"></div>
+  <div class="progress-item flex flex-col-reverse lg:flex-row p-4 md:p-8 lg:p-[11.36vw] gap-x-[14.6590vw]">
+    <div class="flex flex-col justify-end lg:w-1/2">
+      <h3 class="text-sm uppercase mb-4 lg:mb-10">Leadership</h3>
+      <h4 class="font-serif text-dark-gray text-9xl md:text-11xl lg:text-12xl leading-10 lg:leading-4 tracking-wider mb-8">Andrew Tong</h4>
+      <p class="text-xs lg:text-base leading-11 text-charcoal font-light">In the early 1990s, when Andrew began his career in real estate, the industry was significantly different than today. As his responsibilities grew over these 30 years, so did his perspective on the power of insightful real estate investments. Through his leadership and C-suite roles, Andrew has a built a consistent track record of delivering and creating value for stakeholders. His deep and extensive experience, most recently managing a real estate fund, has honed a rare set of skills and long-held relationships in the industry. Now with his own practice, Andrew brings his well-earned reputation for pragmatism, directness and results to Integral Real Estate Advisory.</p>
+      <a href="" class="button dark mt-12"><span><span>Linkedin</span></span></a>
+    </div>
+
+    <div class="lg:w-1/2 mb-12 lg:mb-0">
+      <img src="@asset('images/about-head-shot.jpg')" />
+    </div>
+  </div>
+</section>

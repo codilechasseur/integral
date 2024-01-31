@@ -25,13 +25,17 @@
   <div class="flex flex-col justify-end bg-gradient-to-b xl:bg-gradient-to-br from-dark-gray to-charcoal xl:w-2/5 px-4 pt-36 pb-4 md:px-8 xl:pt-0 xl:p-16 gap-y-12 xl:min-w-[650px]">
     <h3 class="lg:mt-32 font-serif text-medium-gray text-9xl md:text-11xl xl:text-12xl leading-4 tracking-wider">Unlocking <em class="block text-white">the Potential</em> in Real Estate</h3>
     <p class="text-white text-lg md:text-xl xl:text-3xl leading-10 tracking-tight font-light">Managing real estate investments today has never been more complex and the risks have never been higher. Our proven strategic approach, rooted in financial due diligence and creative problem solving delivers long-term results for our clients.</p>
-    <a href="#" class="button"><span><span>Learn more about services</span></span></a>
+    <a href="#" class="button"><span><span>Learn more</span></span></a>
   </div>
 
   <div class="flex flex-col-reverse lg:flex-col xl:flex-row w-full overflow-hidden">
-    <div class="flex flex-col-reverse xl:block pane active bg-gradient-to-r from-[#6D696A] to-[#858081]">
-      <div class="content font-serif text-7xl text-dark-gray">
-        Three decades in the business allows me to provide an unfiltered perspective.
+    <div data-url="/what-we-do" class="flex flex-col-reverse xl:block pane active bg-gradient-to-r from-[#6D696A] to-[#858081]">
+      <div class="content">
+        <p class="font-serif text-2xl md:text-5xl lg:text-7xl leading-8 text-dark-gray">Three decades in the business allows me to provide an unfiltered perspective.</p>
+
+        <div class="link text-white opacity-0 transition-opacity ease-in-out lg:delay-500">
+          Read more about the service
+        </div>
       </div>
 
       <div class="xl:absolute xl:right-0 xl:top-0 h-full flex justify-between items-center xl:[writing-mode:vertical-lr] uppercase text-3xl text-white p-4 md:p-8 xl:py-14 xl:px-0 xl:w-[120px]">
@@ -40,9 +44,13 @@
       </div>
     </div>
 
-    <div class="flex flex-col-reverse xl:block pane bg-medium-gray">
-      <div class="content font-serif text-7xl">
-        Realize your vision
+    <div data-url="/what-we-do" class="flex flex-col-reverse xl:block pane bg-medium-gray">
+      <div class="content">
+        <p class="font-serif text-2xl md:text-5xl lg:text-7xl leading-8 text-dark-gray">Realize your vision</p>
+
+        <div class="link text-white opacity-0 transition-opacity ease-in-out lg:delay-500">
+          Read more about the service
+        </div>
       </div>
 
       <div class="xl:absolute xl:right-0 xl:top-0 h-full flex justify-between items-center xl:[writing-mode:vertical-lr] uppercase text-3xl text-white p-4 md:p-8 xl:py-14 xl:px-0 xl:w-[120px]">
@@ -51,9 +59,13 @@
       </div>
     </div>
 
-    <div class="flex flex-col-reverse pane bg-dust">
-      <div class="content font-serif text-7xl">
-        Discover the world
+    <div data-url="/what-we-do" class="flex flex-col-reverse xl:block pane bg-dust">
+      <div class="content">
+        <p class="font-serif text-2xl md:text-5xl lg:text-7xl leading-8 text-dark-gray">Discover the world</p>
+
+        <div class="link text-white opacity-0 transition-opacity ease-in-out lg:delay-500">
+          Read more about the service
+        </div>
       </div>
 
       <div class="xl:absolute xl:right-0 xl:top-0 h-full flex justify-between items-center xl:[writing-mode:vertical-lr] uppercase text-3xl text-white p-4 md:p-8 xl:py-14 xl:px-0 xl:w-[120px]">
@@ -64,7 +76,7 @@
   </div>
 </div>
 
-<section class="progress-wrapper bg-light-gray">
+<section class="first progress-wrapper bg-light-gray">
   <div class="progress-indicator"></div>
   <div x-data="{ shown: false }" x-intersect.half="shown = true" class="progress-item flex flex-col-reverse lg:flex-row px-12 py-9 md:py-16 md:px-32 lg:pt-32 gap-x-[14.6590vw] transition ease-in-out">
     <div class="flex flex-col justify-end lg:w-1/2">
@@ -79,7 +91,7 @@
   </div>
 </section>
 
-<section class="progress-wrapper bg-light-gray">
+<section class="second progress-wrapper bg-light-gray">
   <div class="progress-indicator"></div>
   <div x-data="{ shown: false }" x-intersect.half="shown = true" class="progress-item flex flex-col-reverse lg:flex-row-reverse px-12 py-9 md:py-16 md:px-32 lg:pb-32 gap-x-[14.6590vw] transition ease-in-out">
     <div class="flex flex-col justify-end lg:w-1/2">
