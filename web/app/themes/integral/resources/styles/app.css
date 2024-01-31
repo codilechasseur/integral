@@ -292,12 +292,18 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
   @apply bg-dust;
 }
 
+.about .progress-wrapper .progress-indicator,
+.about .progress-wrapper .progress-item:before,
+.about .progress-wrapper .progress-item:after {
+  @apply hidden lg:block;
+}
+
 .about .progress-wrapper.first.active:before {
-  @apply bg-dust;
+  @apply lg:bg-dust;
 }
 
 .about .progress-wrapper.second.active:before {
-  @apply bg-warm-gray;
+  @apply lg:bg-warm-gray;
 }
 
 .what-we-do .progress-wrapper.first.active:before {

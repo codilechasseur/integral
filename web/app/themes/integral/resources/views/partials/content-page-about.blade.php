@@ -61,7 +61,7 @@
 <section class="first progress-wrapper bg-light-gray">
   <div class="progress-indicator"></div>
   <div class="progress-item px-4 md:px-8 lg:px-16 py-16 md:py-20 lg:py-24 grid lg:grid-cols-4 gap-y-12 lg:gap-y-32">
-    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 border-r border-black">
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 md:border-r border-black">
       <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Integrity</h3>
       <p class="text-xs lg:text-base font-light">Every day we instill trust in our clients by upholding the highest standard of ethics in our practice.</p>
     </div>
@@ -71,7 +71,7 @@
       <p class="text-xs lg:text-base font-light">We pride ourselves on providing our clients with a clear understanding of risk and our best recommendations to mitigate it.</p>
     </div>
 
-    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 border-r border-black">
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 md:border-r border-black">
       <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Relationships</h3>
       <p class="text-xs lg:text-base font-light">We bring our extensive network of long-standing relationships to every client engagement and deeply appreciate the personal connections we build, embracing their goals as our own.</p>
     </div>
@@ -81,7 +81,7 @@
       <p class="text-xs lg:text-base font-light">We work with our clients to clearly set investment targets, then provide the tools and guidance needed to achieve these results. Our client engagement is driven by the spirit of teamwork essential to success.</p>
     </div>
 
-    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 border-r border-black">
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 md:border-r border-black">
       <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Creativity</h3>
       <p class="text-xs lg:text-base font-light">We are inspired by the uniqueness of each challenge and deliver distinct, insight-driven solutions rather than a traditional formula.</p>
     </div>
