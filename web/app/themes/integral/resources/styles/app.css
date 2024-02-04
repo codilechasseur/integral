@@ -127,6 +127,7 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
   width: fit-content;
   z-index: 10;
   @apply shadow-none !important;
+  @apply text-2xs lg:text-base;
 }
 
 .button span {

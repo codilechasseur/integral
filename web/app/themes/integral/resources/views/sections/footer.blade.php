@@ -24,8 +24,8 @@
       </ul> --}}
     </div>
 
-    @svg('images/tagline-mobile', 'md:hidden mt-11 ml-auto')
-    @svg('images/tagline-tablet', 'hidden md:block lg:hidden mt-[90px] ml-auto')
+    @svg('images/tagline-mobile', 'md:hidden mt-48 ml-auto')
+    @svg('images/tagline-tablet', 'hidden md:block lg:hidden mt-72 ml-auto')
     @svg('images/tagline-desktop', 'hidden lg:block mt-40 ml-auto')
   </div>
 
