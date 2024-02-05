@@ -11,49 +11,52 @@
 </div>
 
 <div class="flex flex-col lg:flex-row">
-  <div>
-    <img src="@asset('images/about-strategic-approach.jpg')" class="block w-full h-auto lg:h-full object-cover" />
+  <div class="w-7/12">
+    <img src="@asset('images/about-strategic-approach.jpg')" class="block w-full h-auto md:h-full object-cover" />
   </div>
 
-  <div class="lg:w-[44vw] p-4 md:p-8 lg:p-16 flex flex-col justify-end gap-y-11 bg-light-gray lg:bg-gradient-to-b from-dark-gray to-charcoal">
+  <div class="w-5/12 lg:w-[44vw] p-4 md:p-8 lg:p-16 flex flex-col justify-end gap-y-11 bg-light-gray lg:bg-gradient-to-b from-dark-gray to-charcoal">
     <h3 class="-mt-[75px] md:-mt-[86px] lg:mt-0 text-9xl lg:text-12xl leading-10 lg:leading-4 tracking-wider text-medium-gray font-serif"><em class="text-white block">Strategic</em> Approach</h3>
     <div class="text-lg md:text-xl lg:text-3xl leading-10 md:leading-9 lg:leading-10 tracking-tight text-charcoal lg:text-white font-light">
-      <p>We take a measured, holistic approach to analyzing each project. Our proven process means we work through defined and distinct phases to build a long-term strategic plan. We are results-driven, focused on building value as we develop and maintain trusted and high-integrity relationships.</p>
+      <p class="text-lg md:text-xl lg:text-3xl max-w-xl">We take a measured, holistic approach to analyzing each project. Our proven process means we work through defined and distinct phases to build a long-term strategic plan. We are results-driven, focused on building value as we develop and maintain trusted and high-integrity relationships.</p>
     </div>
   </div>
 </div>
 
-<div class="bg-light-gray px-4 md:px-8 lg:px-16 py-16 md:py-20 lg:py-24 grid lg:grid-cols-4 lg:divide-x lg:divide-black gap-y-12 lg:gap-y-32">
-  <div class="lg:px-10 first:pt-0 last:pb-0">
-    <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6"><span class="text-medium-gray block">Creating</span> Solutions</h3>
-    <p class="text-xs lg:text-base font-light">Real estate is unique, so we deliver a highly individualized approach that reflects project-specific challenges and needs. When faced with difficulties and complexities, we thrive on finding creative ways to problem solve.</p>
-  </div>
+<section class="first progress-wrapper bg-light-gray">
+  <div class="progress-indicator"></div>
+  <div class="progress-item px-4 md:px-8 lg:px-16 py-16 md:py-20 lg:py-24 grid lg:grid-cols-4 gap-y-12 lg:gap-y-32">
+    <div class="lg:px-10 first:pt-0 last:pb-0 lg:border-r border-black">
+      <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6"><span class="text-medium-gray block">Creating</span> Solutions</h3>
+      <p class="text-xs lg:text-base font-light">Real estate is unique, so we deliver a highly individualized approach that reflects project-specific challenges and needs. When faced with difficulties and complexities, we thrive on finding creative ways to problem solve.</p>
+    </div>
 
-  <div class="lg:px-10 first:pt-0 last:pb-0">
-    <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6"><span class="text-medium-gray block">Optimizing</span> Value</h3>
-    <p class="text-xs lg:text-base font-light">With decades of experience in portfolio management, acquisitions, financing, and capital planning, we provide a seasoned perspective that maximizes value.</p>
-  </div>
+    <div class="lg:px-10 first:pt-0 last:pb-0">
+      <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6"><span class="text-medium-gray block">Optimizing</span> Value</h3>
+      <p class="text-xs lg:text-base font-light">With decades of experience in portfolio management, acquisitions, financing, and capital planning, we provide a seasoned perspective that maximizes value.</p>
+    </div>
 
-  <div class="lg:px-10 first:pt-0 last:pb-0">
-    <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6"><span class="text-medium-gray block">Defining</span> Opportunity</h3>
-    <p class="text-xs lg:text-base font-light">Our phased engagements are designed to build a clear path forward within complex organizations and partnerships.</p>
-  </div>
+    <div class="lg:px-10 first:pt-0 last:pb-0 lg:border-r border-black">
+      <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6"><span class="text-medium-gray block">Defining</span> Opportunity</h3>
+      <p class="text-xs lg:text-base font-light">Our phased engagements are designed to build a clear path forward within complex organizations and partnerships.</p>
+    </div>
 
-  <div class="lg:px-10 first:pt-0 last:pb-0">
-    <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6"><span class="text-medium-gray block">Managing</span> Risk</h3>
-    <p class="text-xs lg:text-base font-light">We help effectively manage volatility and identify potential, so we can build a legacy of value.</p>
+    <div class="lg:px-10 first:pt-0 last:pb-0">
+      <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6"><span class="text-medium-gray block">Managing</span> Risk</h3>
+      <p class="text-xs lg:text-base font-light">We help effectively manage volatility and identify potential, so we can build a legacy of value.</p>
+    </div>
   </div>
-</div>
+</section>
 
 <div class="flex flex-col lg:flex-row-reverse">
-  <div>
-    <img src="@asset('images/about-our-values.jpg')" class="block w-full h-auto lg:h-full object-cover" />
+  <div class="w-7/12">
+    <img src="@asset('images/about-our-values.jpg')" class="block w-full h-auto md:h-full object-cover" />
   </div>
 
-  <div class="lg:w-[44vw] p-4 md:p-8 lg:p-16 flex flex-col justify-end gap-y-11 bg-light-gray lg:bg-gradient-to-b from-dark-gray to-charcoal">
+  <div class="w-5/12 lg:w-[44vw] p-4 md:p-8 lg:p-16 flex flex-col justify-end gap-y-11 bg-light-gray lg:bg-gradient-to-b from-dark-gray to-charcoal grow">
     <h3 class="-mt-[75px] md:-mt-[86px] lg:mt-0 text-9xl lg:text-12xl leading-10 lg:leading-4 tracking-wider text-medium-gray font-serif"><em class="text-white block">Our</em> Values</h3>
     <div class="text-lg md:text-xl lg:text-3xl leading-10 md:leading-9 lg:leading-10 tracking-tight text-charcoal lg:text-white font-light">
-      <p class="text-lg md:text-xl lg:text-3xl">We hold true to our values every day, establishing long-term relationships that are built on honesty, transparency and a track record of results.</p>
+      <p class="text-lg md:text-xl lg:text-3xl max-w-xl">We hold true to our values every day, establishing long-term relationships that are built on honesty, transparency and a track record of results.</p>
     </div>
   </div>
 </div>
@@ -91,7 +94,7 @@
       <p class="text-xs lg:text-base font-light">Every idea, opportunity or challenge we face is explored or solved with a deep commitment to finding the best solution possible.</p>
     </div>
   </div>
-</div>
+</section>
 
 <section class="second progress-wrapper bg-medium-gray lg:bg-light-gray">
   <div class="progress-indicator"></div>
