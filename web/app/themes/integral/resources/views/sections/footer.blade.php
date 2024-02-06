@@ -7,8 +7,8 @@
         <span class="uppercase">Contact:</span>
 
         <ul class="flex flex-col lg:flex-row gap-[18px] lg:gap-0">
-          <li><a class="lg:px-4 lg:last:pl-0 lg:border-r" href="tel://000.000.00.00">000.000.00.00</a></li>
-          <li><a class="lg:px-4 lg:border-r" href="mailto:info@integral.ca">info@integral.ca</a></li>
+          <li><a class="lg:px-4 lg:last:pl-0 lg:border-r" href="tel:6042402685">604.240.2685</a></li>
+          <li><a class="lg:px-4 lg:border-r" href="mailto:info@integralstrategic.ca">info@integralstrategic.ca</a></li>
           <li><a class="lg:px-4 lg:last:pr-0" href="https://linkedin.com" target="_blank">LinkedIn</a></li>
         </ul>
       </div>
@@ -26,7 +26,7 @@
 
     @svg('images/tagline-mobile', 'md:hidden mt-48 ml-auto')
     @svg('images/tagline-tablet', 'hidden md:block lg:hidden mt-72 ml-auto')
-    @svg('images/tagline-desktop', 'hidden lg:block mt-40 ml-auto')
+    @svg('images/tagline-desktop', 'hidden lg:block mt-40 ml-auto max-w-5xl')
   </div>
 
   <div class="flex justify-end gap-x-8 md:gap-x-11 lg:gap-x-9 bg-charcoal py-6 md:py-4 lg:py-4 px-4 md:px-8 lg:px-16 text-white text-right text-3xs">
