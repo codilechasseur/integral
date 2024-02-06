@@ -33,7 +33,7 @@
       <div class="content">
         <p class="font-serif text-2xl md:text-5xl lg:text-7xl leading-8 text-dark-gray">We see exceptional opportunity in the midst of complex and changing real estate markets.</p>
 
-        <div class="link text-white font-light opacity-0 transition-opacity ease-in-out lg:delay-500">
+        <div class="link text-white font-light text-2xs lg:text-base opacity-0 transition-opacity ease-in-out lg:delay-500">
           Learn more
         </div>
       </div>
@@ -48,7 +48,7 @@
       <div class="content">
         <p class="font-serif text-2xl md:text-5xl lg:text-7xl leading-8 text-[#666363]">Real estate owners need experience and a steady hand to navigate these uncertain times.</p>
 
-        <div class="link text-white font-light opacity-0 transition-opacity ease-in-out lg:delay-500">
+        <div class="link text-white font-light text-2xs lg:text-base opacity-0 transition-opacity ease-in-out lg:delay-500">
           Learn more
         </div>
       </div>
@@ -63,7 +63,7 @@
       <div class="content">
         <p class="font-serif text-2xl md:text-5xl lg:text-7xl leading-8 text-[#80797B]">We proudly deliver an individualized perspective for every investor’s distinct challenges and needs.</p>
 
-        <div class="link text-white font-light opacity-0 transition-opacity ease-in-out lg:delay-500">
+        <div class="link text-white font-light text-2xs lg:text-base opacity-0 transition-opacity ease-in-out lg:delay-500">
           Learn more
         </div>
       </div>

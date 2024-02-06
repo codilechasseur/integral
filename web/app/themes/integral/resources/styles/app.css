@@ -238,8 +238,8 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
 .pane .content p:before {
   content: '“';
   position: absolute;
-  top: 58px;
-  left: 58px;
+  /* top: 58px;
+  left: 58px; */
 
   @apply top-[28px] md:top-[32px] lg:top-[58px];
   @apply left-[16px] md:left-[30px] lg:left-[58px];
@@ -255,7 +255,7 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
   @apply max-w-[100%] lg:max-w-[calc(100%-120px)];
   max-height: 100%;
   height: 100%;
-  min-height: 300px;
+  min-height: 360px;
   opacity: 1;
   @apply py-[30px] lg:py-[57px] px-[29px] md:px-[60px] lg:px-[90px];
   transition: opacity 2s ease;
@@ -264,7 +264,7 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
 
 .pane.active .link {
   @apply absolute opacity-100;
-  bottom: 54px;
+  bottom: 34px;
   @apply right-4 lg:right-0;
 }
 
