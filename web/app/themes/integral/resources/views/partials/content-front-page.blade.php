@@ -7,16 +7,16 @@
     <h2 class="font-serif text-10xl leading-11 tracking-[2.16px] md:tracking-[2.76px] lg:tracking-[3.36px] mb-6 md:mb-8 lg:mb-10">integral:</h2>
 
     <div class="flex gap-x-5 md:gap-x-7 text-base mb-5 md:mb-7 font-light">
-      <p>[in • teg • ruhl]</p>
+      <p>[in • TEG • ruhl]</p>
       <p>adjective</p>
     </div>
 
     <hr class="border-2" />
 
     <ol class="list-decimal list-inside mt-7 flex flex-col space-y-3 font-light">
-      <li>Founded on integrity, having a strong moral compass</li>
-      <li>Meaningful projects with an essential purpose</li>
-      <li>Built on astute insights and analysis</li>
+      <li>Founded on <strong>integrity</strong>, having a strong moral compass</li>
+      <li>Meaningful projects with an <strong>essential</strong> purpose</li>
+      <li>Built on astute <strong>insights</strong> and analysis</li>
     </ol>
   </div>
 </div>

@@ -34,7 +34,7 @@
     </div>
 
     <div class="lg:w-1/2 mb-12 lg:mb-0">
-      <img class="w-full" x-show="shown" x-transition.opacity.duration.2000ms src="@asset('images/what-we-do-asset-management.jpg')" class="rounded-full" />
+      <img class="w-full" x-show="shown" x-transition.opacity.duration.2000ms src="@asset('images/what-we-do-asset-management.png')" class="rounded-full" />
     </div>
   </div>
 </section>
