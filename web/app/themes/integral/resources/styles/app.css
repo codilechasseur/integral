@@ -63,36 +63,42 @@ div.c-hamburger > .c-hamburger-inner {
 .error404 header .brand svg g,
 .contact header .brand svg g,
 .thank-you header .brand svg g,
-header.bg-light-gray svg g {
+header.bg-light-gray svg g,
+.page-template-template-basic svg g {
   fill: #191919;
 }
 
 .error404.menu-active header .brand svg g,
 .contact.menu-active header .brand svg g,
-.thank-you.menu-active header .brand svg g {
+.thank-you.menu-active header .brand svg g,
+.page-template-template-basic.menu-active header .brand svg g {
   fill: #fff;
 }
 
 .error404 header #menu-primary-navigation,
 .contact header #menu-primary-navigation,
-.thank-you header #menu-primary-navigation {
+.thank-you header #menu-primary-navigation,
+.page-template-template-basic header #menu-primary-navigation {
   @apply text-white lg:text-charcoal;
 }
 
 .error404 header .c-hamburger .c-hamburger-bar:before,
 .contact header .c-hamburger .c-hamburger-bar:before,
 .thank-you header .c-hamburger .c-hamburger-bar:before,
+.page-template-template-basic .c-hamburger .c-hamburger-bar:before,
 header.bg-light-gray .c-hamburger .c-hamburger-bar:before,
 .error404 header .c-hamburger:hover .c-hamburger-bar:before,
 .contact header .c-hamburger:hover .c-hamburger-bar:before,
 .thank-you header .c-hamburger:hover .c-hamburger-bar:before,
+.page-template-template-basic header .c-hamburger:hover .c-hamburger-bar:before,
 header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
   background-color: #191919;
 }
 
 .error404 header .c-hamburger.active .c-hamburger-bar:before,
 .contact header .c-hamburger.active .c-hamburger-bar:before,
-.thank-you header .c-hamburger.active .c-hamburger-bar:before {
+.thank-you header .c-hamburger.active .c-hamburger-bar:before,
+.page-template-template-basic header .c-hamburger.active .c-hamburger-bar:before {
   background-color: #fff;
 }
 
