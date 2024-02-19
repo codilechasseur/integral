@@ -487,13 +487,6 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
   @apply hidden;
 }
 
-
-
-
-
-
-
-
 .error404,
 .thank-you {
   @apply bg-light-gray;
@@ -502,4 +495,12 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
 .error404 #main,
 .thank-you #main {
   @apply items-end flex p-4 md:p-8 lg:p-16 min-h-[80vh]
+}
+
+.main-content h2 {
+  @apply font-serif font-light text-charcoal text-4xl leading-8 tracking-wide mt-7 mb-4;
+}
+
+.main-content ul {
+  @apply list-disc pl-6 my-2;
 }
