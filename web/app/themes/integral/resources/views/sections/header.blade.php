@@ -1,8 +1,8 @@
 <header
   x-data="{atTop:true}"
   @scroll.window="atTop = window.pageYOffset>1?false:true"
-  class="fixed z-20 w-full flex justify-between px-4 md:px-8 lg:px-16 transition-all duration-200"
-  :class="(atTop === false)?'bg-light-gray text-charcoal py-3 md:py-4 lg:py-6':'text-white bg-transparent py-6 md:py-8 lg:py-12'"
+  class="fixed z-20 w-full flex justify-between px-4 md:px-8 lg:px-16"
+  :class="(atTop === false)?'bg-light-gray text-charcoal py-3 md:py-4 lg:py-6 transition-all duration-200':'text-white bg-transparent py-6 md:py-8 lg:py-12'"
 >
   <a class="brand z-20" href="{{ home_url('/') }}">
     @svg('images/logo', 'w-[164px] lg:w-[234px]')

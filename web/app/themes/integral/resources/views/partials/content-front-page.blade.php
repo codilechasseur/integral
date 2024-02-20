@@ -1,9 +1,9 @@
-<div class="text-white h-screen relative">
-  <img src="@asset('images/hero-home-mobile.jpg')" class="md:hidden h-screen w-screen object-cover" />
-  <img src="@asset('images/hero-home-tablet.jpg')" class="hidden md:block lg:hidden h-screen w-screen object-cover" />
-  <img src="@asset('images/hero-home-desktop.jpg')" class="hidden lg:block h-screen w-screen object-cover" />
+<div x-data="{ shownHero: false }" x-intersect.half="shownHero = true" class="text-white h-screen relative">
+  <img x-show="shownHero" x-transition.opacity.duration.750ms src="@asset('images/hero-home-mobile.jpg')" class="md:hidden h-screen w-screen object-cover " />
+  <img x-show="shownHero" x-transition.opacity.duration.750ms src="@asset('images/hero-home-tablet.jpg')" class="hidden md:block lg:hidden h-screen w-screen object-cover" />
+  <img x-show="shownHero" x-transition.opacity.duration.750ms src="@asset('images/hero-home-desktop.jpg')" class="hidden lg:block h-screen w-screen object-cover" />
 
-  <div class="absolute bottom-0 left-0 px-4 md:px-8 lg:px-16 pb-6 md:pb-8 lg:pb-12">
+  <div x-show="shownHero" x-transition.opacity.duration.3000ms class="absolute bottom-0 left-0 px-4 md:px-8 lg:px-16 pb-6 md:pb-8 lg:pb-12">
     <h2 class="font-serif text-10xl leading-11 tracking-[2.16px] md:tracking-[2.76px] lg:tracking-[3.36px] mb-6 md:mb-8 lg:mb-10">integral:</h2>
 
     <div class="flex gap-x-5 md:gap-x-7 text-base mb-5 md:mb-7 font-light">
@@ -78,30 +78,30 @@
 
 <section class="first progress-wrapper bg-light-gray">
   <div class="progress-indicator"></div>
-  <div x-data="{ shown: false }" x-intersect.half="shown = true" class="progress-item flex flex-col-reverse lg:flex-row px-12 py-9 md:py-16 md:px-32 lg:pt-32 gap-x-[14.6590vw] transition ease-in-out">
+  <div x-data="{ shownOne: false }" x-intersect.half="shownOne = true" class="progress-item flex flex-col-reverse lg:flex-row px-12 py-9 md:py-16 md:px-32 lg:pt-32 gap-x-[14.6590vw] transition ease-in-out">
     <div class="flex flex-col justify-end lg:w-1/2">
-      <h3 x-show="shown" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">Our <em>strategic approach</em> reflects our insight-driven perspective.</h3>
-      <p class="font-light leading-11" x-show="shown" x-transition.opacity.duration.2000ms>Our tactical, phased approach to analyzing and identifying opportunities and mitigating risk in real estate provides confidence and peace of mind in often-uncertain markets. With our thorough and thoughtful process and our inherent ability to identify and challenge assumptions, we build lasting value.</p>
+      <h3 x-show="shownOne" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">Our <em>strategic approach</em> reflects our insight-driven perspective.</h3>
+      <p class="font-light leading-11" x-show="shownOne" x-transition.opacity.duration.2000ms>Our tactical, phased approach to analyzing and identifying opportunities and mitigating risk in real estate provides confidence and peace of mind in often-uncertain markets. With our thorough and thoughtful process and our inherent ability to identify and challenge assumptions, we build lasting value.</p>
       <a href="" class="button dark mt-12"><span><span>Learn more</span></span></a>
     </div>
 
     <div class="lg:w-1/2 mb-12 lg:mb-0">
-      <img  x-show="shown" x-transition.opacity.duration.2000ms src="@asset('images/home-strategic-approach.png')" class="rounded-full" />
+      <img  x-show="shownOne" x-transition.opacity.duration.2000ms src="@asset('images/home-strategic-approach.png')" class="rounded-full" />
     </div>
   </div>
 </section>
 
 <section class="second progress-wrapper bg-light-gray">
   <div class="progress-indicator"></div>
-  <div x-data="{ shown: false }" x-intersect.half="shown = true" class="progress-item flex flex-col-reverse lg:flex-row-reverse px-12 py-9 md:py-16 md:px-32 lg:pb-32 gap-x-[14.6590vw] transition ease-in-out">
+  <div x-data="{ shownTwo: false }" x-intersect.half="shownTwo = true" class="progress-item flex flex-col-reverse lg:flex-row-reverse px-12 py-9 md:py-16 md:px-32 lg:pb-32 gap-x-[14.6590vw] transition ease-in-out">
     <div class="flex flex-col justify-end lg:w-1/2">
-      <h3 x-show="shown" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">The <em>values we share</em> with our clients create excellent alignment and lasting partnerships.</h3>
-      <p class="font-light leading-11" x-show="shown" x-transition.opacity.duration.2000ms>How we work is the foundation of our success. We are a collaborative, experienced partner who proudly lives by our values. Every day, we foster long-term, trusted relationships as we build a legacy and value together.</p>
+      <h3 x-show="shownTwo" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">The <em>values we share</em> with our clients create excellent alignment and lasting partnerships.</h3>
+      <p class="font-light leading-11" x-show="shownTwo" x-transition.opacity.duration.2000ms>How we work is the foundation of our success. We are a collaborative, experienced partner who proudly lives by our values. Every day, we foster long-term, trusted relationships as we build a legacy and value together.</p>
       <a href="" class="button dark mt-12"><span><span>Learn more</span></span></a>
     </div>
 
     <div class="lg:w-1/2 mb-12 lg:mb-0">
-      <img class="w-full" x-show="shown" x-transition.opacity.duration.2000ms src="@asset('images/home-shared-values.jpg')" />
+      <img class="w-full" x-show="shownTwo" x-transition.opacity.duration.2000ms src="@asset('images/home-shared-values.jpg')" />
     </div>
   </div>
 </section>

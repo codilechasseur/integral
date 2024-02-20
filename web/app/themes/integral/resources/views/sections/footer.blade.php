@@ -31,6 +31,6 @@
 
   <div class="flex justify-end gap-x-8 md:gap-x-11 lg:gap-x-9 bg-charcoal py-6 md:py-4 lg:py-4 px-4 md:px-8 lg:px-16 text-white text-right text-3xs">
     <p>@ Integral Strategic. All rights reserved</p>
-    <a class="" href="">Privacy Policy</a>
+    <a class="" href="/privacy-policy">Privacy Policy</a>
   </div>
 </footer>

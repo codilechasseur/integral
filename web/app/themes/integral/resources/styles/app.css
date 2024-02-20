@@ -497,10 +497,19 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
   @apply items-end flex p-4 md:p-8 lg:p-16 min-h-[80vh]
 }
 
+.main-content p,
+.main-content ul {
+  @apply font-light text-base leading-11 max-w-4xl;
+}
+
+.main-content p {
+  @apply mb-4;
+}
+
 .main-content h2 {
   @apply font-serif font-light text-charcoal text-4xl leading-8 tracking-wide mt-7 mb-4;
 }
 
 .main-content ul {
-  @apply list-disc pl-6 my-2;
+  @apply list-disc pl-6 mt-0 mb-5;
 }

@@ -1,23 +1,23 @@
-<div class="text-white h-screen relative">
-  <img src="@asset('images/hero-about-mobile.jpg')" class="md:hidden h-screen w-screen object-cover" />
-  <img src="@asset('images/hero-about-tablet.jpg')" class="hidden md:block lg:hidden h-screen w-screen object-cover" />
-  <img src="@asset('images/hero-about-desktop.jpg')" class="hidden lg:block h-screen w-screen object-cover" />
+<div x-data="{ shownHero: false }" x-intersect.half="shownHero = true" class="text-white h-screen relative">
+  <img x-show="shownHero" x-transition.opacity.duration.750ms src="@asset('images/hero-about-mobile.jpg')" class="md:hidden h-screen w-screen object-cover" />
+  <img x-show="shownHero" x-transition.opacity.duration.750ms src="@asset('images/hero-about-tablet.jpg')" class="hidden md:block lg:hidden h-screen w-screen object-cover" />
+  <img x-show="shownHero" x-transition.opacity.duration.750ms src="@asset('images/hero-about-desktop.jpg')" class="hidden lg:block h-screen w-screen object-cover" />
 
   <div class="absolute bottom-0 left-0 px-4 md:px-8 lg:px-16 pb-6 md:pb-8 lg:pb-12 lg:w-1/2 lg:max-w-[778px] flex flex-col gap-y-6 lg:gap-y-10">
-    <h2 class="font-serif text-4xl md:text-8xl lg:text-10xl leading-8 md:leading-6 tracking-tight">In <em>everything</em> we do on behalf of our clients we instil <em>trust</em> by upholding the highest <em>standard</em> of ethics in our practice.</h2>
+    <h2 x-show="shownHero" x-transition.opacity.duration.3000ms class="font-serif text-4xl md:text-8xl lg:text-10xl leading-8 md:leading-6 tracking-tight">In <em>everything</em> we do on behalf of our clients we instil <em>trust</em> by upholding the highest <em>standard</em> of ethics in our practice.</h2>
 
-    <p class="text-xs md:text-sm lg:text-base leading-11 font-light">Founded by Andrew Tong, Integral Strategic Real Estate is a boutique real estate investment, management and advisory firm that brings three decades of extensive experience, due diligence and accountability to every engagement. We partner with institutional investors, not-for-profit organizations and high net-worth families to add value to their portfolio, solve real estate challenges and ultimately optimize opportunities.</p>
+    <p x-show="shownHero" x-transition.opacity.duration.3000ms class="text-xs md:text-sm lg:text-base leading-11 font-light">Founded by Andrew Tong, Integral Strategic Real Estate is a boutique real estate investment, management and advisory firm that brings three decades of extensive experience, due diligence and accountability to every engagement. We partner with institutional investors, not-for-profit organizations and high net-worth families to add value to their portfolio, solve real estate challenges and ultimately optimize opportunities.</p>
   </div>
 </div>
 
-<div class="flex flex-col lg:flex-row">
+<div x-data="{ shownOne: false }" x-intersect.half="shownOne = true" class="flex flex-col lg:flex-row">
   <div class="lg:w-7/12">
-    <img src="@asset('images/about-strategic-approach.jpg')" class="block w-full h-auto md:h-full object-cover" />
+    <img x-show="shownOne" x-transition.opacity.duration.2000ms src="@asset('images/about-strategic-approach.jpg')" class="block w-full h-auto md:h-full object-cover" />
   </div>
 
   <div class="lg:w-5/12 p-4 md:p-8 lg:p-16 flex flex-col justify-end gap-y-11 bg-light-gray lg:bg-gradient-to-b from-dark-gray to-charcoal">
-    <h3 class="-mt-[75px] md:-mt-[86px] lg:mt-0 text-9xl lg:text-12xl leading-10 lg:leading-4 tracking-wider text-medium-gray font-serif"><em class="text-white block">Strategic</em> Approach</h3>
-    <div class="text-lg md:text-xl lg:text-3xl leading-10 md:leading-9 lg:leading-10 tracking-tight text-charcoal lg:text-white font-light">
+    <h3 x-show="shownOne" x-transition.opacity.duration.2000ms class="-mt-[75px] md:-mt-[86px] lg:mt-0 text-9xl lg:text-12xl leading-10 lg:leading-4 tracking-wider text-medium-gray font-serif"><em class="text-white block">Strategic</em> Approach</h3>
+    <div x-show="shownOne" x-transition.opacity.duration.2000ms class="text-lg md:text-xl lg:text-3xl leading-10 md:leading-9 lg:leading-10 tracking-tight text-charcoal lg:text-white font-light">
       <p class="text-lg md:text-xl lg:text-3xl max-w-xl">We take a measured, holistic approach to analyzing each project. Our proven process means we work through defined and distinct phases to build a long-term strategic plan. We are results-driven, focused on building value as we develop and maintain trusted and high-integrity relationships.</p>
     </div>
   </div>
@@ -48,14 +48,14 @@
   </div>
 </section>
 
-<div class="flex flex-col lg:flex-row-reverse">
+<div x-data="{ shownTwo: false }" x-intersect.half="shownTwo = true" class="flex flex-col lg:flex-row-reverse">
   <div class="lg:w-7/12">
-    <img src="@asset('images/about-our-values.jpg')" class="block w-full h-auto md:h-full object-cover" />
+    <img x-show="shownTwo" x-transition.opacity.duration.2000ms src="@asset('images/about-our-values.jpg')" class="block w-full h-auto md:h-full object-cover" />
   </div>
 
   <div class="lg:w-5/12 p-4 md:p-8 lg:p-16 flex flex-col justify-end gap-y-11 bg-light-gray lg:bg-gradient-to-b from-dark-gray to-charcoal grow">
-    <h3 class="-mt-[75px] md:-mt-[86px] lg:mt-0 text-9xl lg:text-12xl leading-10 lg:leading-4 tracking-wider text-medium-gray font-serif"><em class="text-white block">Our</em> Values</h3>
-    <div class="text-lg md:text-xl lg:text-3xl leading-10 md:leading-9 lg:leading-10 tracking-tight text-charcoal lg:text-white font-light">
+    <h3 x-show="shownTwo" x-transition.opacity.duration.2000ms class="-mt-[75px] md:-mt-[86px] lg:mt-0 text-9xl lg:text-12xl leading-10 lg:leading-4 tracking-wider text-medium-gray font-serif"><em class="text-white block">Our</em> Values</h3>
+    <div x-show="shownTwo" x-transition.opacity.duration.2000ms class="text-lg md:text-xl lg:text-3xl leading-10 md:leading-9 lg:leading-10 tracking-tight text-charcoal lg:text-white font-light">
       <p class="text-lg md:text-xl lg:text-3xl max-w-xl">We hold true to our values every day, establishing long-term relationships that are built on honesty, transparency and a track record of results.</p>
     </div>
   </div>
