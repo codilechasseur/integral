@@ -37,7 +37,7 @@ module.exports = {
       '9xl': '2.75rem', // 44px
       '10xl': '3rem', // 48px
       '11xl': '3.625rem', // 58px
-      '12xl': '4.375rem', // 70px
+      '12xl': '4rem', // 70px
     },
     fontFamily: {
       sans: ['SequelSans', ...defaultTheme.fontFamily.sans],

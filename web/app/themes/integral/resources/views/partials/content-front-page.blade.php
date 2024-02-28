@@ -1,7 +1,7 @@
 <div x-data="{ shownHero: false }" x-intersect.half="shownHero = true" class="text-white h-screen relative">
-  <img x-show="shownHero" x-transition.opacity.duration.750ms src="@asset('images/hero-home-mobile.jpg')" class="md:hidden h-screen w-screen object-cover " />
-  <img x-show="shownHero" x-transition.opacity.duration.750ms src="@asset('images/hero-home-tablet.jpg')" class="hidden md:block lg:hidden h-screen w-screen object-cover" />
-  <img x-show="shownHero" x-transition.opacity.duration.750ms src="@asset('images/hero-home-desktop.jpg')" class="hidden lg:block h-screen w-screen object-cover" />
+  <img src="@asset('images/hero-home-mobile.jpg')" class="md:hidden h-screen w-screen object-cover " />
+  <img src="@asset('images/hero-home-tablet.jpg')" class="hidden md:block lg:hidden h-screen w-screen object-cover" />
+  <img src="@asset('images/hero-home-desktop.jpg')" class="hidden lg:block h-screen w-screen object-cover" />
 
   <div x-show="shownHero" x-transition.opacity.duration.3000ms class="absolute bottom-0 left-0 px-4 md:px-8 lg:px-16 pb-6 md:pb-8 lg:pb-12">
     <h2 class="font-serif text-10xl leading-11 tracking-[2.16px] md:tracking-[2.76px] lg:tracking-[3.36px] mb-6 md:mb-8 lg:mb-10">integral:</h2>
@@ -21,11 +21,11 @@
   </div>
 </div>
 
-<div class="bg-dust flex flex-col xl:flex-row xl:h-[80vh]">
+<div class="bg-dust flex flex-col xl:flex-row xl:h-[80vh] min-h-[700px]">
   <div class="flex flex-col justify-end bg-gradient-to-b xl:bg-gradient-to-br from-dark-gray to-charcoal xl:w-2/5 px-4 pt-36 pb-4 md:px-8 xl:pt-0 xl:p-16 gap-y-12 xl:min-w-[650px]">
     <h3 class="lg:mt-32 font-serif text-medium-gray text-9xl md:text-11xl xl:text-12xl leading-4 tracking-wider">Unlocking <em class="block text-white">the Potential</em> in Real Estate</h3>
     <p class="text-white text-lg md:text-xl xl:text-3xl leading-10 tracking-tight font-light">Managing real estate investments today has never been more complex and the risks have never been higher. Our proven strategic approach, rooted in experienced due diligence and creative problem-solving, delivers long-term results.</p>
-    <a href="#" class="button"><span><span>Learn more</span></span></a>
+    <a href="/what-we-do" class="button"><span><span>Learn more</span></span></a>
   </div>
 
   <div class="flex flex-col-reverse lg:flex-col xl:flex-row w-full overflow-hidden">
@@ -82,7 +82,7 @@
     <div class="flex flex-col justify-end lg:w-1/2">
       <h3 x-show="shownOne" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">Our <em>strategic approach</em> reflects our insight-driven perspective.</h3>
       <p class="font-light leading-11" x-show="shownOne" x-transition.opacity.duration.2000ms>Our tactical, phased approach to analyzing and identifying opportunities and mitigating risk in real estate provides confidence and peace of mind in often-uncertain markets. With our thorough and thoughtful process and our inherent ability to identify and challenge assumptions, we build lasting value.</p>
-      <a href="" class="button dark mt-12"><span><span>Learn more</span></span></a>
+      <a href="/about#strategic-approach" class="button dark mt-12"><span><span>Learn more</span></span></a>
     </div>
 
     <div class="lg:w-1/2 mb-12 lg:mb-0">
@@ -95,9 +95,9 @@
   <div class="progress-indicator"></div>
   <div x-data="{ shownTwo: false }" x-intersect.half="shownTwo = true" class="progress-item flex flex-col-reverse lg:flex-row-reverse px-12 py-9 md:py-16 md:px-32 lg:pb-32 gap-x-[14.6590vw] transition ease-in-out">
     <div class="flex flex-col justify-end lg:w-1/2">
-      <h3 x-show="shownTwo" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">The <em>values we share</em> with our clients create excellent alignment and lasting partnerships.</h3>
+      <h3 x-show="shownTwo" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">The <em>values we share</em> with our investors create excellent alignment and lasting partnerships.</h3>
       <p class="font-light leading-11" x-show="shownTwo" x-transition.opacity.duration.2000ms>How we work is the foundation of our success. We are a collaborative, experienced partner who proudly lives by our values. Every day, we foster long-term, trusted relationships as we build a legacy and value together.</p>
-      <a href="" class="button dark mt-12"><span><span>Learn more</span></span></a>
+      <a href="/about#our-values" class="button dark mt-12"><span><span>Learn more</span></span></a>
     </div>
 
     <div class="lg:w-1/2 mb-12 lg:mb-0">
