@@ -1,4 +1,4 @@
-<div x-data="{ shownHero: false }" x-intersect.half="shownHero = true" class="text-white h-screen relative">
+<div x-data="{ shownHero: false }" x-intersect.half="shownHero = true" class="bg-charcoal text-white h-screen relative">
   <img src="@asset('images/hero-home-mobile.jpg')" class="md:hidden h-screen w-screen object-cover " />
   <img src="@asset('images/hero-home-tablet.jpg')" class="hidden md:block lg:hidden h-screen w-screen object-cover" />
   <img src="@asset('images/hero-home-desktop.jpg')" class="hidden lg:block h-screen w-screen object-cover" />
