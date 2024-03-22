@@ -34,33 +34,6 @@ domReady(async () => {
   });
 
   /**
-   * Horizontal Scrubber
-   */
-  const timelines     = document.querySelectorAll('.progress-wrapper');
-  const vHeightOffset = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) / 1.25;
-
-  timelines.forEach((timeline, index) => {
-    var percentage = 0;
-    window.addEventListener('scroll', () => {
-      if (timeline.getBoundingClientRect().bottom - vHeightOffset <= timeline.offsetHeight) {
-        var elementHeight = timeline.getBoundingClientRect().bottom - vHeightOffset;
-        var scroll = (elementHeight - timeline.offsetHeight) * -1;
-        percentage = (100 * scroll) / timeline.offsetHeight;
-
-        timeline.querySelector('.progress-indicator').style.maxHeight = percentage + '%';
-
-        if(percentage > 50) {
-          timeline.classList.add('active');
-        } else {
-          timeline.classList.remove('active');
-        }
-      } else {
-        timeline.querySelector('.progress-indicator').style.maxHeight = 0
-      };
-    });
-  });
-
-  /**
    * Mobile Menu
    */
   const menuToggle = document.querySelector('.c-hamburger');

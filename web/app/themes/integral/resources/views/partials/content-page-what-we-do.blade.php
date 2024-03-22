@@ -10,12 +10,10 @@
   </div>
 </div>
 
-<section class="first progress-wrapper bg-light-gray">
-  <div class="progress-indicator"></div>
-
-  <div x-data="{ shownOne: false }" x-intersect.half="shownOne = true" class="progress-item flex flex-col-reverse lg:flex-row p-12 md:py-16 md:px-32 lg:py-28 gap-x-[14.6590vw]">
+<section class="bg-light-gray" id="investments">
+  <div x-data="{ shownOne: false }" x-intersect.half="shownOne = true" class="flex flex-col-reverse lg:flex-row p-12 md:py-16 md:px-32 lg:py-28 gap-x-[14.6590vw]">
     <div class="flex flex-col justify-end lg:w-1/2">
-      <h3 x-show="shownOne" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">In these challenging and changing markets, we see exceptional opportunity to partner, problem solve and identify value not uncovered by others.</h3>
+      <h3 x-show="shownOne" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">In these challenging and changing markets, we see exceptional <em>investment</em> opportunities to partner, problem solve and identify value not uncovered by others.</h3>
       <p class="font-light leading-11" x-show="shownOne" x-transition.opacity.duration.2000ms>With three decades of experience in managing and transacting more than $4 billion in acquisitions, dispositions, financing and leasing transactions across Canada for income and development properties, we are able to actively pursue strategic investments. In these challenging and changing markets, we see exceptional opportunity to problem solve and identify value not uncovered by others.</p>
     </div>
 
@@ -25,9 +23,8 @@
   </div>
 </section>
 
-<section class="second progress-wrapper bg-light-gray">
-  <div class="progress-indicator"></div>
-  <div x-data="{ shownTwo: false }" x-intersect.half="shownTwo = true" class="progress-item flex flex-col-reverse lg:flex-row-reverse p-12 md:py-16 md:px-32 lg:py-28 gap-x-[14.6590vw]">
+<section class="bg-[#D3D0D0]" id="assets">
+  <div x-data="{ shownTwo: false }" x-intersect.half="shownTwo = true" class="flex flex-col-reverse lg:flex-row-reverse p-12 md:py-16 md:px-32 lg:py-28 gap-x-[14.6590vw]">
     <div class="flex flex-col justify-end lg:w-1/2">
       <h3 x-show="shownTwo" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">The success of our <em>asset & portfolio</em> management reflects our insight into building <em>long-term value and legacy</em>.</h3>
       <p class="font-light leading-11" x-show="shownTwo" x-transition.opacity.duration.2000ms>Our extensive background in portfolio, asset and property management, as well as capital planning, makes us uniquely positioned to share our expertise and insight. Our history of professional fund management means we are equipped to oversee simple to complex portfolios. In these uncertain times, we provide the steady, experienced perspective that allows for nuanced, reflective decisions that optimize value.</p>
@@ -39,9 +36,8 @@
   </div>
 </section>
 
-<section class="third progress-wrapper bg-light-gray">
-  <div class="progress-indicator"></div>
-  <div x-data="{ shownThree: false }" x-intersect.half="shownThree = true" class="progress-item flex flex-col-reverse lg:flex-row p-12 md:py-16 md:px-32 lg:py-28 gap-x-[14.6590vw]">
+<section class="bg-light-gray" id="advisory">
+  <div x-data="{ shownThree: false }" x-intersect.half="shownThree = true" class="flex flex-col-reverse lg:flex-row p-12 md:py-16 md:px-32 lg:py-28 gap-x-[14.6590vw]">
     <div class="flex flex-col justify-end lg:w-1/2">
       <h3 x-show="shownThree" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">We proudly provide our <em>strategic advice</em> with transparent and frank perspectives.</h3>
       <p class="font-light leading-11" x-show="shownThree" x-transition.opacity.duration.2000ms>We see every opportunity as distinct, with its own set of solutions. Renowned for our creative problem-solving, our decades of experience has honed our insight into every class of real estate, from residential — across market and affordable rental housing, condos and seniors housing — to industrial warehouses, office buildings, retail and land development. Working in BC, Alberta, Ontario and Quebec has allowed us to proudly build a network of trusted relationships among various partners, consultants and authorities across Canada. We work together to put every real estate investment on a productive path toward long-term success.</p>

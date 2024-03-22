@@ -29,12 +29,12 @@
   </div>
 
   <div class="flex flex-col-reverse lg:flex-col xl:flex-row w-full overflow-hidden">
-    <div data-url="/what-we-do" class="flex flex-col-reverse xl:block pane active bg-gradient-to-r from-[#6D696A] to-[#858081]">
+    <div data-url="/what-we-do#investments" class="flex flex-col-reverse xl:block pane active bg-gradient-to-r from-[#6D696A] to-[#858081]">
       <div class="content">
         <p class="font-serif text-2xl md:text-5xl lg:text-7xl leading-8 text-dark-gray">We see exceptional opportunity in the midst of complex and changing real estate markets.</p>
 
         <div class="link text-white font-light text-2xs lg:text-base opacity-0 transition-opacity ease-in-out lg:delay-500">
-          Learn more
+          <a href="/what-we-do#investments" class="button"><span><span>Learn more</span></span></a>
         </div>
       </div>
 
@@ -44,12 +44,12 @@
       </div>
     </div>
 
-    <div data-url="/what-we-do" class="flex flex-col-reverse xl:block pane bg-medium-gray">
+    <div data-url="/what-we-do#assets" class="flex flex-col-reverse xl:block pane bg-medium-gray">
       <div class="content">
-        <p class="font-serif text-2xl md:text-5xl lg:text-7xl leading-8 text-[#666363]">Real estate owners need experience and a steady hand to navigate these uncertain times.</p>
+        <p class="font-serif text-2xl md:text-5xl lg:text-7xl leading-8 text-dark-gray">Real estate owners need experience and a steady hand to navigate these uncertain times.</p>
 
         <div class="link text-white font-light text-2xs lg:text-base opacity-0 transition-opacity ease-in-out lg:delay-500">
-          Learn more
+          <a href="/what-we-do#assets" class="button"><span><span>Learn more</span></span></a>
         </div>
       </div>
 
@@ -59,12 +59,12 @@
       </div>
     </div>
 
-    <div data-url="/what-we-do" class="flex flex-col-reverse xl:block pane bg-dust">
+    <div data-url="/what-we-do#advisory" class="flex flex-col-reverse xl:block pane bg-dust">
       <div class="content">
-        <p class="font-serif text-2xl md:text-5xl lg:text-7xl leading-8 text-[#80797B]">We proudly deliver an individualized perspective for every investor’s distinct challenges and needs.</p>
+        <p class="font-serif text-2xl md:text-5xl lg:text-7xl leading-8 text-dark-gray">We proudly deliver an individualized perspective for every investor’s distinct challenges and needs.</p>
 
         <div class="link text-white font-light text-2xs lg:text-base opacity-0 transition-opacity ease-in-out lg:delay-500">
-          Learn more
+          <a href="/what-we-do#advisory" class="button"><span><span>Learn more</span></span></a>
         </div>
       </div>
 
@@ -76,9 +76,8 @@
   </div>
 </div>
 
-<section class="first progress-wrapper bg-light-gray">
-  <div class="progress-indicator"></div>
-  <div x-data="{ shownOne: false }" x-intersect.half="shownOne = true" class="progress-item flex flex-col-reverse lg:flex-row px-12 py-9 md:py-16 md:px-32 lg:pt-32 gap-x-[14.6590vw] transition ease-in-out">
+<section class="bg-light-gray">
+  <div x-data="{ shownOne: false }" x-intersect.half="shownOne = true" class="flex flex-col-reverse lg:flex-row px-12 py-9 md:py-16 md:px-32 lg:py-32 gap-x-[14.6590vw] transition ease-in-out">
     <div class="flex flex-col justify-end lg:w-1/2">
       <h3 x-show="shownOne" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">Our <em>strategic approach</em> reflects our insight-driven perspective.</h3>
       <p class="font-light leading-11" x-show="shownOne" x-transition.opacity.duration.2000ms>Our tactical, phased approach to analyzing and identifying opportunities and mitigating risk in real estate provides confidence and peace of mind in often-uncertain markets. With our thorough and thoughtful process and our inherent ability to identify and challenge assumptions, we build lasting value.</p>
@@ -91,9 +90,8 @@
   </div>
 </section>
 
-<section class="second progress-wrapper bg-light-gray">
-  <div class="progress-indicator"></div>
-  <div x-data="{ shownTwo: false }" x-intersect.half="shownTwo = true" class="progress-item flex flex-col-reverse lg:flex-row-reverse px-12 py-9 md:py-16 md:px-32 lg:pb-32 gap-x-[14.6590vw] transition ease-in-out">
+<section class="bg-[#D3D0D0]">
+  <div x-data="{ shownTwo: false }" x-intersect.half="shownTwo = true" class="flex flex-col-reverse lg:flex-row-reverse px-12 py-9 md:py-16 md:px-32 lg:py-32 gap-x-[14.6590vw] transition ease-in-out">
     <div class="flex flex-col justify-end lg:w-1/2">
       <h3 x-show="shownTwo" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">The <em>values we share</em> with our investors create excellent alignment and lasting partnerships.</h3>
       <p class="font-light leading-11" x-show="shownTwo" x-transition.opacity.duration.2000ms>How we work is the foundation of our success. We are a collaborative, experienced partner who proudly lives by our values. Every day, we foster long-term, trusted relationships as we build a legacy and value together.</p>

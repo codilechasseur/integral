@@ -9,7 +9,7 @@
         <ul class="flex flex-col lg:flex-row gap-[18px] lg:gap-0">
           <li><a class="lg:px-4 lg:last:pl-0 lg:border-r" href="tel:6042402685">604.240.2685</a></li>
           <li><a class="lg:px-4 lg:border-r" href="mailto:info@integralstrategic.ca">info@integralstrategic.ca</a></li>
-          <li><a class="lg:px-4 lg:last:pr-0" href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+          <li><a class="lg:px-4 lg:last:pr-0" href="https://www.linkedin.com/in/andrewtong-realestate/" target="_blank">LinkedIn</a></li>
         </ul>
       </div>
 

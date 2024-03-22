@@ -26,24 +26,24 @@
 <section class="first progress-wrapper bg-light-gray">
   <div class="progress-indicator"></div>
   <div class="progress-item px-4 md:px-8 lg:px-16 py-16 md:py-20 lg:py-24 grid lg:grid-cols-4 gap-y-12 lg:gap-y-32">
-    <div class="lg:px-10 first:pt-0 last:pb-0 lg:border-r border-black">
+    <div class="lg:px-10 first:pt-0 last:pb-0 lg:border-l border-black">
       <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6"><span class="text-medium-gray block">Creating</span> Solutions</h3>
       <p class="text-xs lg:text-base font-light">Real estate is unique, so we deliver a highly individualized approach that reflects project-specific challenges and needs. When faced with difficulties and complexities, we thrive on finding creative ways to problem solve.</p>
     </div>
 
-    <div class="lg:px-10 first:pt-0 last:pb-0">
+    <div class="lg:px-10 first:pt-0 last:pb-0 lg:border-l border-black">
       <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6"><span class="text-medium-gray block">Optimizing</span> Value</h3>
       <p class="text-xs lg:text-base font-light">With decades of experience in portfolio management, acquisitions, financing, and capital planning, we provide a seasoned perspective that maximizes value.</p>
     </div>
 
-    <div class="lg:px-10 first:pt-0 last:pb-0 lg:border-r border-black">
+    <div class="lg:px-10 first:pt-0 last:pb-0 lg:border-l border-black">
       <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6"><span class="text-medium-gray block">Defining</span> Opportunity</h3>
       <p class="text-xs lg:text-base font-light">Our phased engagements are designed to build a clear path forward within complex organizations and partnerships.</p>
     </div>
 
-    <div class="lg:px-10 first:pt-0 last:pb-0">
+    <div class="lg:px-10 first:pt-0 last:pb-0 lg:border-l border-black">
       <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6"><span class="text-medium-gray block">Managing</span> Risk</h3>
-      <p class="text-xs lg:text-base font-light">We help effectively manage volatility and identify potential, so we can build a legacy of value.</p>
+      <p class="text-xs lg:text-base font-light">With an institutional lens, we identify and manage risk by establishing effective and creative mitigation strategies which build long term value and protection.</p>
     </div>
   </div>
 </section>
@@ -61,49 +61,47 @@
   </div>
 </div>
 
-<section class="first progress-wrapper bg-light-gray">
-  <div class="progress-indicator"></div>
-  <div class="progress-item px-4 md:px-8 lg:px-16 py-16 md:py-20 lg:py-24 grid lg:grid-cols-4 gap-y-12 lg:gap-y-32">
-    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 lg:border-r border-black">
+<section class="bg-light-gray">
+  <div class="px-4 md:px-8 lg:px-16 py-16 md:py-20 lg:py-24 grid lg:grid-cols-4 gap-y-12 lg:gap-y-32">
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 lg:border-l border-black">
       <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Integrity</h3>
       <p class="text-xs lg:text-base font-light">Every day we instill trust by upholding the highest standard of ethics in our practice.</p>
     </div>
 
-    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0">
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 lg:border-l border-black">
       <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Directness</h3>
-      <p class="text-xs lg:text-base font-light">We pride ourselves on providing a clear understanding of risk and our best recommendations to mitigate it.</p>
+      <p class="text-xs lg:text-base font-light">We pride ourselves on providing a clear and frank understanding of risk and our best recommendations to mitigate it.</p>
     </div>
 
-    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 lg:border-r border-black">
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 lg:border-l border-black">
       <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Relationships</h3>
       <p class="text-xs lg:text-base font-light">We bring our extensive network of long-standing relationships to every engagement and deeply appreciate the value of personal trust and connection.</p>
     </div>
 
-    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0">
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 lg:border-l border-black">
       <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Collaboration</h3>
       <p class="text-xs lg:text-base font-light">We work with all stakeholders to clearly set investment targets, then provide the tools and guidance needed to achieve these results. Our engagement is driven by the spirit of teamwork essential to success.</p>
     </div>
 
-    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 lg:border-r border-black">
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 lg:border-l border-black">
       <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Creativity</h3>
       <p class="text-xs lg:text-base font-light">We are inspired by the uniqueness of each challenge and deliver distinct, insight-driven solutions rather than a traditional formula.</p>
     </div>
 
-    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0">
+    <div class="lg:px-10 lg:first:pt-0 lg:last:pb-0 lg:border-l border-black">
       <h3 class="font-serif text-4xl lg:text-7xl text-dark-gray leading-5 mb-6">Excellence</h3>
       <p class="text-xs lg:text-base font-light">Every idea, opportunity or challenge we face is explored or solved with a deep commitment to finding the best solution possible.</p>
     </div>
   </div>
 </section>
 
-<section class="second progress-wrapper bg-medium-gray lg:bg-light-gray">
-  <div class="progress-indicator"></div>
-  <div class="progress-item flex flex-col-reverse lg:flex-row p-4 md:p-8 lg:p-[11.36vw] gap-x-[14.6590vw]">
+<section class="bg-[#D3D0D0]">
+  <div class="flex flex-col-reverse lg:flex-row p-4 md:p-8 lg:p-[11.36vw] gap-x-[14.6590vw]">
     <div class="flex flex-col justify-end lg:w-1/2">
       <h3 class="text-sm uppercase mb-4 lg:mb-10">Leadership</h3>
       <h4 class="font-serif text-dark-gray text-9xl md:text-[3.3rem] lg:text-12xl leading-10 lg:leading-4 tracking-wider mb-8">Andrew Tong</h4>
       <p class="text-xs lg:text-base leading-11 text-charcoal font-light">Andrew has dedicated his career to the real estate industry. Over the past thirty years, he has a built a consistent track record of delivering and creating value for stakeholders. His deep and extensive experience includes such roles as Chief Investment Officer of a pension-owned Canadian real estate development and investment firm and seven years as a Managing Director of a Canadian real estate fund valued at $3 billion. Through his leadership and C-suite roles, he has honed a rare set of skills and long-held relationships in the industry. Now with his own practice, Andrew brings his well-earned reputation for pragmatism, directness and results to Integral Strategic Real Estate.</p>
-      <a href="" class="button dark mt-12"><span><span>Linkedin</span></span></a>
+      <a href="https://www.linkedin.com/in/andrewtong-realestate/" target="_blank" class="button dark mt-12"><span><span>Linkedin</span></span></a>
     </div>
 
     <div class="lg:w-1/2 mb-12 lg:mb-0">

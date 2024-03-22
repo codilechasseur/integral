@@ -154,7 +154,8 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
   border: 2px solid white;
   border-left: none;
   border-bottom: none;
-  transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  /* transition: height 0.15s ease-out, width 0.15s ease-out 0.15s; */
+  transition: all 0.15s ease-out;
 }
 
 .button.dark > span:after {
@@ -162,9 +163,10 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
 }
 
 .button:hover > span:after {
-  width: calc(100% - 2px);
+  /* width: calc(100% - 2px);
   height: calc(100% - 2px);
-  transition: width 0.3s ease-out, height 0.15s ease-out 0.3s;
+  transition: width 0.3s ease-out, height 0.15s ease-out 0.3s; */
+  border-color: #555;
 }
 
 .button > span:before {
@@ -177,7 +179,8 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
   border: 2px solid white;
   border-right: none;
   border-bottom: none;
-  transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  /* transition: height 0.15s ease-out, width 0.15s ease-out 0.15s; */
+  transition: all 0.15s ease-out;
 }
 
 .button.dark > span:before {
@@ -185,21 +188,27 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
 }
 
 .button:hover > span:before {
-  width: calc(100% - 2px);
+  /* width: calc(100% - 2px);
   height: calc(100% - 2px);
-  transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  transition: height 0.15s ease-out, width 0.15s ease-out 0.15s; */
+  border-color: #555;
 }
 
 .button > span > span {
   padding: 0 20px;
   color: #ffffff;
+  transition: all 0.15s ease-out;
 }
 
 .button.dark > span > span {
   color: #191919;
 }
 
-.button>span>span:after {
+.button:hover>span>span {
+  color: #555;
+}
+
+.button > span > span:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -209,7 +218,7 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
   opacity: 0;
 }
 
-.button:hover > span > span:after {
+/* .button:hover > span > span:after {
   opacity: 1;
   border-bottom: 2px solid white;
   width: calc(100% - 2px);
@@ -219,7 +228,7 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
 
 .button.dark:hover > span > span:after {
   border-color: #191919;
-}
+} */
 
 /**
 ** Horizontal Accordion
@@ -270,130 +279,9 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
 
 .pane.active .link {
   @apply absolute opacity-100;
-  bottom: 50px;
-  @apply right-4 md:right-8 lg:-right-[85px] xl:right-0;
+  bottom: 38px;
+  @apply right-[-5px] md:right-8 lg:-right-[85px] xl:right-0;
 }
-
-.progress-wrapper:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: scale(0);
-  opacity: 0;
-  transition: opacity 0.5s, transform 0.8s, background-color 0.5s;
-}
-
-.progress-wrapper.active:before {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.home .progress-wrapper.first.active:before {
-  @apply bg-warm-gray;
-}
-
-.home .progress-wrapper.second.active:before {
-  @apply bg-dust;
-}
-
-.about .progress-wrapper .progress-indicator,
-.about .progress-wrapper .progress-item:before,
-.about .progress-wrapper .progress-item:after {
-  @apply hidden lg:block;
-}
-
-.about .progress-wrapper.first.active:before {
-  @apply lg:bg-dust;
-}
-
-.about .progress-wrapper.second.active:before {
-  @apply lg:bg-warm-gray;
-}
-
-.what-we-do .progress-wrapper.first.active:before {
-  @apply bg-warm-gray;
-}
-
-.what-we-do .progress-wrapper.second.active:before {
-  @apply bg-dust;
-}
-
-.what-we-do .progress-wrapper.third.active:before {
-  @apply bg-warm-gray;
-}
-
-.progress-wrapper,
-.progress-wrapper > div:not(.progress-indicator) {
-  position: relative;
-}
-
-.progress-wrapper .progress-indicator,
-.progress-wrapper .progress-item:before,
-.progress-wrapper .progress-item:after {
-  transition: opacity 0.5s;
-}
-
-.progress-wrapper.active .progress-indicator,
-.progress-wrapper.active .progress-item:before,
-.progress-wrapper.active .progress-item:after {
-  opacity: 0;
-}
-
-.progress-indicator {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 100%;
-  max-height: 0;
-  background-color: #424041;
-  z-index: 10;
-  transition: max-height 0.1s ease;
-
-  @apply left-6 lg:left-1/2;
-}
-
-.progress-wrapper > div:not(.progress-indicator):before {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: #928D8E;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  @apply transition ease-in-out left-6 lg:left-1/2;
-}
-
-.progress-wrapper > div:not(.progress-indicator):after {
-  content: '';
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  background-color: #928D8E;
-  top: 0;
-  transform: translateX(-50%);
-
-  @apply left-6 lg:left-1/2;
-}
-
-/* .progress-wrapper.active {
-  @apply bg-warm-gray;
-} */
-
-.progress-wrapper.active .progress-item:before {
-  @apply bg-dark-gray;
-}
-
-
-
-
-
 
 /**
 ** Gravity Forms
