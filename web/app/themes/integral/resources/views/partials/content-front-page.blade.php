@@ -1,5 +1,5 @@
 <div x-data="{ shownHero: false }" x-intersect.half="shownHero = true" class="bg-charcoal text-white h-screen relative">
-  <img src="@asset('images/hero-home-mobile.jpg')" class="md:hidden h-screen w-screen object-cover " />
+  <img src="@asset('images/hero-home-mobile.jpg')" class="md:hidden h-screen w-screen object-cover" />
   <img src="@asset('images/hero-home-tablet.jpg')" class="hidden md:block lg:hidden h-screen w-screen object-cover" />
   <img src="@asset('images/hero-home-desktop.jpg')" class="hidden lg:block h-screen w-screen object-cover" />
 
@@ -29,12 +29,12 @@
   </div>
 
   <div class="flex flex-col-reverse lg:flex-col xl:flex-row w-full overflow-hidden">
-    <div data-url="/what-we-do#investments" class="flex flex-col-reverse xl:block pane active bg-gradient-to-r from-[#6D696A] to-[#858081]">
+    <div data-url="/what-we-do/#investments" class="flex flex-col-reverse xl:block pane active bg-gradient-to-r from-[#6D696A] to-[#858081]">
       <div class="content">
         <p class="font-serif text-2xl md:text-5xl lg:text-7xl leading-8 text-dark-gray">We see exceptional opportunity in the midst of complex and changing real estate markets.</p>
 
         <div class="link text-white font-light text-2xs lg:text-base opacity-0 transition-opacity ease-in-out lg:delay-500">
-          <a href="/what-we-do#investments" class="button"><span><span>Learn more</span></span></a>
+          <a href="/what-we-do/#investments" class="button"><span><span>Learn more</span></span></a>
         </div>
       </div>
 
@@ -44,12 +44,12 @@
       </div>
     </div>
 
-    <div data-url="/what-we-do#assets" class="flex flex-col-reverse xl:block pane bg-medium-gray">
+    <div data-url="/what-we-do/#assets" class="flex flex-col-reverse xl:block pane bg-medium-gray">
       <div class="content">
         <p class="font-serif text-2xl md:text-5xl lg:text-7xl leading-8 text-dark-gray">Real estate owners need experience and a steady hand to navigate these uncertain times.</p>
 
         <div class="link text-white font-light text-2xs lg:text-base opacity-0 transition-opacity ease-in-out lg:delay-500">
-          <a href="/what-we-do#assets" class="button"><span><span>Learn more</span></span></a>
+          <a href="/what-we-do/#assets" class="button"><span><span>Learn more</span></span></a>
         </div>
       </div>
 
@@ -59,12 +59,12 @@
       </div>
     </div>
 
-    <div data-url="/what-we-do#advisory" class="flex flex-col-reverse xl:block pane bg-dust">
+    <div data-url="/what-we-do/#advisory" class="flex flex-col-reverse xl:block pane bg-dust">
       <div class="content">
         <p class="font-serif text-2xl md:text-5xl lg:text-7xl leading-8 text-dark-gray">We proudly deliver an individualized perspective for every investor’s distinct challenges and needs.</p>
 
         <div class="link text-white font-light text-2xs lg:text-base opacity-0 transition-opacity ease-in-out lg:delay-500">
-          <a href="/what-we-do#advisory" class="button"><span><span>Learn more</span></span></a>
+          <a href="/what-we-do/#advisory" class="button"><span><span>Learn more</span></span></a>
         </div>
       </div>
 
@@ -81,7 +81,7 @@
     <div class="flex flex-col justify-end lg:w-1/2">
       <h3 x-show="shownOne" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">Our <em>strategic approach</em> reflects our insight-driven perspective.</h3>
       <p class="font-light leading-11" x-show="shownOne" x-transition.opacity.duration.2000ms>Our tactical, phased approach to analyzing and identifying opportunities and mitigating risk in real estate provides confidence and peace of mind in often-uncertain markets. With our thorough and thoughtful process and our inherent ability to identify and challenge assumptions, we build lasting value.</p>
-      <a href="/about#strategic-approach" class="button dark mt-12"><span><span>Learn more</span></span></a>
+      <a href="/about/#strategic-approach" class="button dark mt-12"><span><span>Learn more</span></span></a>
     </div>
 
     <div class="lg:w-1/2 mb-12 lg:mb-0">
@@ -95,7 +95,7 @@
     <div class="flex flex-col justify-end lg:w-1/2">
       <h3 x-show="shownTwo" x-transition.opacity.duration.2000ms class="font-serif text-5xl md:text-8xl lg:text-10xl leading-6 tracking-tight mb-6">The <em>values we share</em> with our investors create excellent alignment and lasting partnerships.</h3>
       <p class="font-light leading-11" x-show="shownTwo" x-transition.opacity.duration.2000ms>How we work is the foundation of our success. We are a collaborative, experienced partner who proudly lives by our values. Every day, we foster long-term, trusted relationships as we build a legacy and value together.</p>
-      <a href="/about#our-values" class="button dark mt-12"><span><span>Learn more</span></span></a>
+      <a href="/about/#our-values" class="button dark mt-12"><span><span>Learn more</span></span></a>
     </div>
 
     <div class="lg:w-1/2 mb-12 lg:mb-0">
