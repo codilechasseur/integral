@@ -1,6 +1,6 @@
-<div x-data="{ shownHero: false }" x-intersect.half="shownHero = true" class="bg-charcoal text-white h-screen relative">
-  <img src="@asset('images/hero-what-we-do-mobile.jpg')" class="md:hidden h-screen w-screen object-cover" />
-  <img src="@asset('images/hero-what-we-do-tablet.jpg')" class="hidden md:block lg:hidden h-screen w-screen object-cover" />
+<div x-data="{ shownHero: false }" x-intersect.half="shownHero = true" class="bg-charcoal text-white h-[100svh] lg:h-screen relative">
+  <img src="@asset('images/hero-what-we-do-mobile.jpg')" class="md:hidden h-[100svh] w-screen object-cover" />
+  <img src="@asset('images/hero-what-we-do-tablet.jpg')" class="hidden md:block lg:hidden h-[100svh] w-screen object-cover" />
   <img src="@asset('images/hero-what-we-do-desktop.jpg')" class="hidden lg:block h-screen w-screen object-cover" />
 
   <div class="absolute bottom-0 left-0 px-4 md:px-8 lg:px-16 pb-6 md:pb-8 lg:pb-12 lg:w-1/2 lg:max-w-[778px] flex flex-col gap-y-6 lg:gap-y-10">
