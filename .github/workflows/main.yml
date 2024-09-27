@@ -20,7 +20,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.1'
+          php-version: '8.3'
 
       - name: Create .env file
         uses: SpicyPizza/create-envfile@v1
@@ -91,4 +91,4 @@ jobs:
             ln -sfn ${{ env.KINSTA_FOLDER }}public/shared/uploads ${{ env.KINSTA_FOLDER }}public/releases/${{ github.sha }}/web/app
             cp ${{ env.KINSTA_FOLDER }}public/shared/.env ${{ env.KINSTA_FOLDER }}public/releases/${{ github.sha }}
             ln -sfn ${{ env.KINSTA_FOLDER }}public/releases/${{ github.sha }} ${{ env.KINSTA_FOLDER }}public/current
-            cd ${{ env.KINSTA_FOLDER }}public/releases/${{ github.sha }}/web && wp kinsta cache purge && wp cache flush
+            cd ${{ env.KINSTA_FOLDER }}public/releases/${{ github.sha }}/web && wp cache flush
