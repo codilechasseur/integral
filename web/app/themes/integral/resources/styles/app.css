@@ -49,6 +49,7 @@ div.c-hamburger > .c-hamburger-inner {
 header.bg-light-gray svg g,
 .page-template-template-basic svg g {
   fill: #191919;
+  transition: fill 0.3s ease;
 }
 
 .error404.menu-active header .brand svg g,
@@ -56,6 +57,7 @@ header.bg-light-gray svg g,
 .thank-you.menu-active header .brand svg g,
 .page-template-template-basic.menu-active header .brand svg g {
   fill: #fff;
+  transition: fill 0.3s ease;
 }
 
 .error404 header #menu-primary-navigation,

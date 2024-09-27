@@ -15,7 +15,7 @@
     <img src="@asset('images/about-strategic-approach.jpg')" class="block w-full h-auto md:h-full object-cover" />
   </div>
 
-  <div class="lg:w-5/12 p-4 md:p-8 lg:p-16 flex flex-col justify-end gap-y-11 bg-light-gray lg:bg-gradient-to-b from-dark-gray to-charcoal">
+  <div class="lg:w-5/12 p-4 md:p-8 lg:p-16 flex flex-col justify-end gap-y-7 md:gap-y-11 bg-light-gray lg:bg-gradient-to-b from-dark-gray to-charcoal">
     <h3 class="-mt-[75px] md:-mt-[104px] lg:mt-0 text-9xl md:text-[3.3rem] lg:text-12xl leading-10 lg:leading-4 tracking-wider text-medium-gray font-serif js-show-on-scroll"><em class="text-white block">Strategic</em> Approach</h3>
     <div class="text-lg md:text-xl lg:text-3xl leading-10 md:leading-9 lg:leading-10 tracking-tight text-charcoal lg:text-white font-light js-show-on-scroll">
       <p class="text-lg md:text-xl lg:text-3xl max-w-xl">We take a measured, holistic approach to analyzing each project. Our proven process means we work through defined and distinct phases to build a long-term strategic plan. We are results-driven, focused on building value as we develop and maintain trusted and high-integrity relationships.</p>
@@ -53,7 +53,7 @@
     <img src="@asset('images/about-our-values.jpg')" class="block w-full h-auto md:h-full object-cover" />
   </div>
 
-  <div class="lg:w-5/12 p-4 md:p-8 lg:p-16 flex flex-col justify-end gap-y-11 bg-light-gray lg:bg-gradient-to-b from-dark-gray to-charcoal grow">
+  <div class="lg:w-5/12 p-4 md:p-8 lg:p-16 flex flex-col justify-end gap-y-7 md:gap-y-11 bg-light-gray lg:bg-gradient-to-b from-dark-gray to-charcoal grow">
     <h3 class="-mt-[75px] md:-mt-[104px] lg:mt-0 text-9xl md:text-[3.3rem] lg:text-12xl leading-10 lg:leading-4 tracking-wider text-medium-gray font-serif js-show-on-scroll"><em class="text-white block">Our</em> Values</h3>
     <div class="text-lg md:text-xl lg:text-3xl leading-10 md:leading-9 lg:leading-10 tracking-tight text-charcoal lg:text-white font-light js-show-on-scroll">
       <p class="text-lg md:text-xl lg:text-3xl max-w-xl">We hold true to our values every day, establishing long-term relationships that are built on honesty, transparency and a track record of results.</p>
