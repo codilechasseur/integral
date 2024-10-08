@@ -40,7 +40,7 @@ module.exports = {
       '12xl': '4rem', // 70px
     },
     fontFamily: {
-      sans: ['SequelSans', ...defaultTheme.fontFamily.sans],
+      sans: ['Inter', ...defaultTheme.fontFamily.sans],
       serif: ['SuisseWorks', ...defaultTheme.fontFamily.serif],
     },
     lineHeight: {
@@ -67,6 +67,15 @@ module.exports = {
       animationSpeed: 1,
     },
     extend: {
+      animation: {
+        fadeIn: "fadeIn 1.5s ease-in forwards"
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        }
+      }
     },
   },
   plugins: [require('tailwindcss-delicious-hamburgers')],

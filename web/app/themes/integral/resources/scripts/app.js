@@ -25,12 +25,11 @@ domReady(async () => {
       panes[activePaneIndex].classList.remove('active');
       activePaneIndex = index;
       panes[activePaneIndex].classList.add('active');
-
-      panes[activePaneIndex].querySelector('.content').addEventListener('click', ()=> {
-        console.log(panes[activePaneIndex].dataset.url);
-        window.location.href = panes[activePaneIndex].dataset.url;
-      })
     });
+
+    pane.querySelector('.content').addEventListener('click', () => {
+      window.location.href = pane.dataset.url;
+    })
   });
 
   /**
@@ -43,6 +42,33 @@ domReady(async () => {
     menuToggle.classList.toggle('active');
     menu.classList.toggle('active');
     body.classList.toggle('menu-active');
+  });
+
+
+  // Callback for IntersectionObserver
+  const callback = function (entries) {
+    entries.forEach((entry) => {
+      // Is the element in the viewport?
+      if (entry.isIntersecting) {
+        // Add the fadeIn class:
+        entry.target.classList.add("animate-fadeIn");
+      }
+    });
+  };
+
+  // Get all the elements you want to show on scroll
+  const targets = document.querySelectorAll(".js-show-on-scroll");
+
+  // Set up a new observer
+  const observer = new IntersectionObserver(callback);
+
+  // Loop through each of the target
+  targets.forEach(function (target) {
+    // Hide the element
+    target.classList.add("opacity-0");
+
+    // Add the element to the watcher
+    observer.observe(target);
   });
 });
 

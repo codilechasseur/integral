@@ -11,25 +11,8 @@
 }
 
 @font-face {
-  font-family: 'SuisseWorks';
-  src: url('fonts/SuisseWorks-Italic.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SequelSans';
-  src: url('fonts/Sequel-Sans-Book.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SequelSans';
-  src: url('fonts/Sequel-Sans-Light.woff') format('woff');
-  font-weight: 300;
+  font-family: 'Inter';
+  src: url('fonts/InterVariable.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
 }
@@ -66,6 +49,7 @@ div.c-hamburger > .c-hamburger-inner {
 header.bg-light-gray svg g,
 .page-template-template-basic svg g {
   fill: #191919;
+  transition: fill 0.3s ease;
 }
 
 .error404.menu-active header .brand svg g,
@@ -73,6 +57,7 @@ header.bg-light-gray svg g,
 .thank-you.menu-active header .brand svg g,
 .page-template-template-basic.menu-active header .brand svg g {
   fill: #fff;
+  transition: fill 0.3s ease;
 }
 
 .error404 header #menu-primary-navigation,
@@ -253,12 +238,17 @@ header.bg-light-gray .c-hamburger:hover .c-hamburger-bar:before {
 .pane .content p:before {
   content: '“';
   position: absolute;
-  /* top: 58px;
-  left: 58px; */
 
   @apply top-[28px] md:top-[32px] lg:top-[58px];
   @apply left-[16px] md:left-[30px] lg:left-[58px];
-  @apply text-[24px] md:text-[51.2px] lg:text-[64px]
+  @apply text-[24px] md:text-[51.2px] lg:text-[64px];
+}
+
+.pane .content p:after {
+  content: '”';
+  position: absolute;
+
+  @apply text-[24px] md:text-[51.2px] lg:text-[64px];
 }
 
 .pane.active {
